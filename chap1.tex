@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{natbib}
 \title{Philosophy Honours Thesis}
 \author{Adam Chalmers}
 \date{2016}
@@ -27,7 +28,7 @@ where \(a\) is an action and \(o\) is any outcome which may arise as a result of
 
 Firstly, agents who maximise their expected utility will, by definition, obtain maximal utility in the long run, and given that utility is a measure of an outcome's desirability, expected utility maximisation therefore effectively guides agents towards achieving the most of their desires.
 
-Secondly, expected utility theory is a logical implication of basic axioms of rational choice (citation Von Neumann \& Morgenstern, 1944). This means any agent who doesn't take an action of maximal expected utility is violating one of the axioms of rational choice, which are all intuitively reasonable.
+Secondly, expected utility theory is a logical implication of basic axioms of rational choice \citep{von1944games}. This means any agent who doesn't take an action of maximal expected utility is violating one of the axioms of rational choice, which are all intuitively reasonable.
 
 In many real-world situations expected utility theory seems to correctly value probabilistic actions such as gambles, medical interventions and business decisions. However, philosophers have devised many decision problems where expected utility seems to dramatically overvalue particular actions and endorse irrational choices. Even worse, this paper shows that expected utility maximisers can be systematically and repeatedly exploited by malicious agents who put them into particular decision problems. 
 
@@ -37,13 +38,13 @@ Expected utility theory systematically overvalues a class of decision theory pro
 
 \subsubsection {St. Petersburg Paradox}
 
-In the St. Petersburg paradox (citation Bernoulli), an agent is offered a gamble where a fair coin is repeatedly flipped until it lands tails-up. The agent is then paid \$\(2^N\) (footnote re dollars), where N is the number of heads that were flipped. 
+In the St. Petersburg paradox an agent is offered a gamble where a fair coin is repeatedly flipped until it lands tails-up. The agent is then paid \$\(2^N\) \footnote{Imagine a sociopathic scientist is offering St. Petersburg gambles that pays out not dollars, but saved human lives (perhaps he knows the secret to manufacturing a much-needed vaccination, or perhaps he has some doomsday device that can kill an arbitrarily large number of humans).}, where N is the number of heads that were flipped. 
 
-The expected utility of this gamble is \$\((\frac{1}{2}\times2 + \frac{1}{4}\times4+...) = \infty\), and therefore an expected utility maximiser should be willing to pay any finite amount to purchase it. Millions or billions of dollars are worth almost nothing compared to something with infinite expected utility. However, this seems like a gross overvaluation because the rewards from this gamble depreciate so steeply. 97\% of the time, the agent will make \$32 or less from the gamble. 
+The expected utility of this gamble is \$\((\frac{1}{2}\times2 + \frac{1}{4}\times4+...) = \infty\) \citep{resnik1987choices}, and therefore an expected utility maximiser should be willing to pay any finite amount to purchase it. Millions or billions of dollars are worth almost nothing compared to something with infinite expected utility. However, this seems like a gross overvaluation because the rewards from this gamble depreciate so steeply. 97\% of the time, the agent will make \$32 or less from the gamble. 
 
 \subsubsection {Pascal's Wager}
 
-(citation Pascal) proposed treating theism as a decision problem: an agent's decision to participate in religious observance is motivated by their desire to enter heaven, conditional on God existing.
+Blaise Pascal proposed treating theism as a decision problem: an agent's decision to participate in religious observance is motivated by their desire to enter heaven, conditional on God existing \citep{pascal1852pensees}.
 
 \begin{center}
 \begin{tabular}{ | l | l | l |}
@@ -60,7 +61,7 @@ The expected utility of this gamble is \$\((\frac{1}{2}\times2 + \frac{1}{4}\tim
 By this decision table, worshipping God dominates non-worship. Heaven is presumed to have infinite utility, therefore the expected utility of worship will always be infinite (because an agent's disbelief in God could only ever be finite). This remains true no matter how tiny the agent's estimate of God's existence is. It also remains even if the religious observance is costly or demanding - even if the agent has to pay a large (but finite) amount of utility to perform religious observance, worshipping still maximises expected utility.
 
 \subsubsection {Pascal's Mugging}
-Many objections to Pascal's Wager dispute specific properties of God or  particular accounts of infinity in probability theory. Pascal's Mugging was proposed by (citation Bostrom) in order to focus criticism towards the decision-theoretic aspects of Pascal's Mugging and away from metaphysical or mathematical analysis.
+Many objections to Pascal's Wager dispute specific properties of God or  particular accounts of infinity in probability theory. Pascal's Mugging was proposed by \citep{bostrom2009pascal} in order to focus criticism towards the decision-theoretic aspects of Pascal's Mugging and away from metaphysical or mathematical analysis.
 
 In Pascal's Mugging, the agent is confronted by a Mugger who claims to be a wizard whose powers can magically multiplying money. She asks the agent for a loan of \$10, promising to use her magical powers to give the agent a fantastic sum of money in return. The agent has no reason to believe in magic and the Mugger offers no evidence of her wizardry, and so it appears rational for the agent to reject her offer.
 
@@ -78,7 +79,7 @@ The St. Petersburg gamble can easily be modified to award payouts in utilons ins
 
 Pascal's Wager can similarly be used to compel an expected utility-maximiser's options. An agent should easily give up their riches and material goods if such costs are necessary for the agent's actions to qualify as religious observance. Indeed, religious observance can involve any finitely-large utility cost and still dominate non-observance, due to the presumption that heaven is valued at infinite utility. Suppose an agent was considering the worship of Quetzalcoatl the Aztec serpent god. Quetzalcoatl's worship involves human sacrifice, which our agent thinks is abhorrent and values at, say, -9000 utilons. An expected utility maximiser should still prefer to perform human sacrifice and be rewarded with heaven rather than not worship, because a large finite utility cost still doesn't cancel out the infinite utility of heaven. 
 
-Of course many responses to Pascal's Wager point out that the agent doesn't face a binary choice. There are many possible gods - Quetzalcoatl, Jesus, Poseidon - and not all of them demand human sacrifices. Many gods offer a chance at infinite utility. Alternative gods who do not require human sacrifice exist, and the decisionmaker is free to choose a god whose worship is more pleasing, since differences in each god's likelihood and worship-cost are cancelled out by the infinite utility reward in the expected utility calculations. (citation)
+Of course many responses to Pascal's Wager point out that the agent doesn't face a binary choice. There are many possible gods - Quetzalcoatl, Jesus, Poseidon - and not all of them demand human sacrifices. Many gods offer a chance at infinite utility. Alternative gods who do not require human sacrifice exist, and the decisionmaker is free to choose a god whose worship is more pleasing, since differences in each god's likelihood and worship-cost are cancelled out by the infinite utility reward in the expected utility calculations \citep{diderot1746pensees}.
 
 Pascal's Mugging cannot be resolved by the many gods objection. If the wizard offers to grant arbitrarily high utility instead of money, then an expected utility maximiser should be willing to pay any amount of utility to appease the mugger. By similar reasoning to the previous examples, an expected utility maximiser would sacrifice their family or perform any other arbitrarily undesirable deed, because the Mugger can offer them utility high enough to perfectly balance out the expected utility equation.
 
@@ -88,7 +89,7 @@ None of these individual considerations are new. That an infinite utility gai ca
 
 Suppose there are two agents, an expected utility maximiser called Max, and an exploitative agent called Eliza. If Eliza knows Max is an expected utility maximiser, she can force him to undertake arbitrarily (but finitely) unpleasant actions by appealing to the norms of his decision theory. 
 
-Here is a specific example. While Max is walking down the street, Eliza appears and asks him for \$100. Max politely declines. Eliza then remembers Max is an expected utility maximser, and offers him the chance to play a St. Petersburg lottery in exchange for \$100. Max declines again, explaining that even though this would be a utility-maximising trade for him, he doubts she actually possesses the material backing to host a genuine St. Petersburg gamble (footnote or citation). Eliza counters by explaining that, even if Max's belief in her is 1 in \(10^{20}\), his tiny confidence is cancelled out by the infinite expected utility of the St. Petersburg gamble if she is telling the truth.
+Here is a specific example. While Max is walking down the street, Eliza appears and asks him for \$100. Max politely declines. Eliza then remembers Max is an expected utility maximser, and offers him the chance to play a St. Petersburg lottery in exchange for \$100. Max declines again, explaining that even though this would be a utility-maximising trade for him, he doubts she actually possesses the material backing to host a genuine St. Petersburg gamble\footnote{By a \'genuine\' St. Petersburg gamble, I mean one with a large enough financial backing to guarantee a profit no matter how high a number of coins were flipped.}. Eliza counters by explaining that, even if Max's belief in her is 1 in \(10^{20}\), his tiny confidence is cancelled out by the infinite expected utility of the St. Petersburg gamble if she is telling the truth.
 
 \[EU(payEliza)=(10^{-20}\times(\infty-C)) = \infty\]
 \[EU(dontPay)=0\]
@@ -100,5 +101,6 @@ Why was Eliza successful? If either Max was not an expected utility maximser, or
 Note that Eliza could have performed a Pascal's Mugging just as easily - promising to use her magical powers to grant Max a large reward calculated to dominate his skepticism. In fact, constructing any HULP problem will allow Eliza to exploit Max and force his action. This is because in all HULP problems, the HULP action dominates the walk-away action regardless of which particular large finite cost is attached to performing the HULP action. Eliza could ask Max to rob a bank, torture his family, kidnap the president or mutilate himself and rest assured that, despite the incredibly large utility costs Max would pay in carrying out these actions, Max would be compelled to obey her if he is a genuine expected utility maximiser.
 
 These concerns demonstrate why expected utility maximisation is inadequate as a norm of decision theory. Any expected utility maximising agent can have their agency hijacked by an exploiter who is able to offer them HULP problems, and as we have seen, such problems are trivial and cheap to offer. In the next chapter I will formalise my notion of HULP problems and go over the mathematics behind HULP exploitation.
-
+\bibliographystyle{plain}
+\bibliography{chap1}
 \end{document}
