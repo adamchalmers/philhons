@@ -120,7 +120,7 @@ Note that Eliza could have performed a Pascal's Mugging just as easily by promis
 
 These concerns demonstrate why expected utility maximisation is inadequate as a norm of decision theory. Any expected utility maximising agent can have their agency hijacked by an exploiter who is able to offer them HULP problems, and as we have seen, such problems are trivial and cheap to offer. In the next chapter I will formalise my notion of HULP problems and go over the mathematics behind HULP exploitation.
 
-\section{Formalising exploitation}
+\section{Exploitation}
 
 In the previous section, I provided an intuitive explanation of HULP exploitation. To summarise:
 
@@ -132,20 +132,53 @@ In the previous section, I provided an intuitive explanation of HULP exploitatio
 
 This section formalises the notion of HULP exploitation and explains why immunity to such exploitation is a desirable norm of rationality. I will begin by outlining the generic form of HULP exploitation, and showing how the Max-Eliza exploitation in the previous section is a specific instance of this general exploitation method. I will then show that HULP-exploitable agents can have their agency hijacked and their preferences reordered at no cost to the exploiter. Agents who wish to preserve their utility function should thus be careful to avoid HULP-exploitation, and we should enshrine immunity to HULP-exploitation as a norm of rationality and desirable property of any decision agents.
 
-\subsection{HULP-exploitation}
-
-\subsection{How bad is HULP-exploitation?}
+\subsection{How does exploitation work}
 
 Agents should avoid specific situations of HULP-exploitation, and if possible, avoid being HULP-exploitable at all. This is because HULP-exploitation can lead to the victim modifying and reordering their preferences in a way which leads to them avoiding opportunities to greatly advance their interests, or even taking actions which greatly set back their interests. This is informally demonstrated in the Max-Eliza story above, where Max initially prefers keeping his money to giving it away, but after Eliza offers him the gamble, he prefers giving his money away to keeping it.
 
-We can put this formally like so:
+Formally: HULP-exploitation allows the exploiter to arbitrarily reorder the victim's preferences by presenting offers which modify the expected utility of the victim's actions. The following section formalises how exploiter can compel or prevent any action from the victim at will, at no personal cost. 
 
-\begin{center}
-FORMAL PROOF GOES HERE
-\end{center}
+\subsubsection{Formalising exploitation}
 
-This demonstrates that Eliza can reverse Max's preferences at no cost to herself. Goal-driven agents seek to maintain their preferences \citep{omohundro2008basic,bostrom2012will} (EXPANDED EXPLANATION OF THIS GOES HERE - ASK MARK FOR READINGS ON THIS TOPIC), and therefore an ideal goal-driven agent should not allow themselves to be HULP-exploited.
+Suppose the victim has some action \(A\) available to them, which is certain to cause the undesirable outcome \(O, u(O) < 0\). The victim will prefer not to act upon this action.
 
+The exploiter then offers the victim a desirable reward \(R, u(R) > 0\) if the victim performs \(A\). The victim estimates the probability that the exploiter's offer is honest, \(p(H)\), and calculates the new expected utility of performing A:
+
+\[EU(A) = p(H).((u(R)+u(O))) + (1-p(H)).u(O)\]
+
+Rearranging this yields
+
+\[EU(A) = p(H).u(R) + u(O)\]
+
+\(A\) is therefore desirable (i.e. \(EU(A)>0\)) exactly when
+
+\[p(H).u(R) + u(O) > 0\]
+
+i.e. when
+
+\[u(R) > \frac{-u(O)}{p(H)}\]
+
+Therefore, if the exploiter offers a sufficiently-high reward, they can turn the initially unattractive action \(A\) into a desirable one. Crucially, this requires no cost or commitment from the exploiter. The exploiter merely has to put the offer to the victim in order to flip their preference regarding \(A\).
+
+More generally, suppose the victim has two possible actions \(A\) and \(B\) which result in outcomes \(X\) and \(Y\), and prefers \(Y\) to \(X\) such that \(u(X)<u(Y)\). If an exploiter offers a reward \(R\) for performing \(A\), then provided
+
+\[u(R) > \frac{u(B)-u(A)}{p(H)}\]
+
+the agent will prefer \(A\) to \(B\).
+
+\subsection{Should agents avoid having their desires changed?}
+
+We have seen that HULP-exploitable agents can have their preferences reordered by malicious agents. At first glance, it is unclear how serious of a problem this poses. Decision theory tells agents how best to achieve their goals, but it has nothing to say about the stability or value of those goals themselves.
+
+Two extreme views on preference-modification are tenable. In computer science and artificial intelligence, goal-driven agents are often thought to value stability of preference. \citep{omohundro2008basic,bostrom2012will} argue that powerful agents will generally go to great depths to preserve their utility function \(U\) (i.e. their preferences), because allowing it to be modified to some other \(U'\) would be unlikely to achieve progress towards the original \(U\). Informally: ``if you offered Gandhi a pill that made him want to kill people, he would refuse to take it, because he knows that then he would kill people, and the current Gandhi doesn’t want to kill people'' \citep{1_yudkowsky_2012}. 
+
+I feel the computer-scientific model of utility functions fails to capture the possibility of desirable preference change that many decisionmakers naturally go through. Even the most rational humans often find preference change to be desirable and meaningful. For example, few people enjoy the taste of alcohol when they first try it, but many consider developing such a taste to be desirable and good. Many preference changes function like this, regardless of whether or not the change is consciously chosen or self-directed. Consider a person Alex who has just started to enjoy jazz music, but can't stand Duke Ellington\footnote{I originally heard this argument for preference change from Dr. Mark Colyvan [NOTE: Mark should I cite you formally on this?]}. Alex would probably enjoy having their preference against Duke Ellington altered, because enjoying the music of Duke Ellington would provide them with more chances to enjoy music and a deeper appreciation of jazz. Whether Alex grows to enjoy Duke Ellington naturally or by someone else's doing (suppose Alex's friend forced them to listen to Duke Ellington records until it developed a familiar comfort), the end result is a pleasant, desirable preference shift.
+
+However, this example does not show that preferences are arbitrary, or that preference changes are unconcerning. While many people wish to develop a taste for alcohol, or jazz music, few people in their right mind wish to develop a taste for feces, or the sound of nails on a chalkboard, or for snuff videos. It seems there are some preference changes we do not wish to undergo. I feel this is sufficient grounds to claim that HULP-exploitation is a serious problem, because it allows the exploiter to reorder \textit{any} preference regardless of how strongly attached the agent is to it. An exploiter could indeed compel an agent to do any of the distasteful actions above, regardless of how strong the agent's initial preference to avoid them.
+
+I believe HULP-exploitation is worrying because many agents do have strong values which they see as part of their identity, and exploiters can subvert these goal structures. Exploiters can compel agents to act in the exploiter's interests and against the agent's own goals. Although decision theory is not concerned with stability or choice of an agent's values, it seems difficult to conceptualise an agent which wouldn't lament its goals being subject to arbitrary modification. Acting for a purpose is part of what it means to \textit{be} an agent, and if this purpose can be revised by literally any other agent capable of presenting a gamble, then our notion of agenthood requires substantial reworking.
+
+How can an agent possibly avoid HULP-exploitation, given that it seems to arise as a natural consequence of expected utility maximisation? I believe we can very slightly alter the norms of decision theory in a way which keeps expected utility maximisation largely intact, and which does not reject either infinite utilities or unbounded utility functions. In the next section I will outline this new approach. 
 \bibliographystyle{plain}
 \bibliography{thesis}
 \end{document}
