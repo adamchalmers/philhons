@@ -100,7 +100,7 @@ However, the Mugger can promise an arbitrarily large amount of money, and our ag
 These three problems all share some similar features. In all of them, a gamble's expected utility and its actual intuitively reasonable value appear to differ. All involve a choice between two options:
 
 \begin{itemize}
-\item A “walk away” option with certain chance of zero payoff (and therefore expected utility of zero). Examples of this include not buying the St. Petersburg lottery, not worshipping God, and not paying the Mugger.
+\item A ``walk away'' option with certain chance of zero payoff (and therefore expected utility of zero). Examples of this include not buying the St. Petersburg lottery, not worshipping God, and not paying the Mugger.
 \item A HULP option (High Utility payoff with Low Probability) with high expected utility. This includes buying the St. Petersburg lottery, worshipping God and paying the Mugger.
 \end{itemize}
 
@@ -203,7 +203,27 @@ How can an agent possibly avoid HULP-exploitation, given that it seems to arise 
 
 I have shown that agents who value HULP gambles at their expected utility are vulnerable to HULP exploitation, where their preferences can be arbitrarily reordered by an adversarial agent. In this section I will consider the characteristics of agents who cannot be HULP-exploited, and assess whether any of these agents are ``strictly better'' than standard expected utility maximisers. I will consider an agent's decision theory ``strictly better'' than expected utility maximisation if it endorses the same actions as expected utility maximisation for non-HULP problems, and avoids endorsing the HULP action for HULP problems.
 
-\subsection{Agents who disregard expected utility}
+\subsection{Agents who don't maximise expected utility}
+
+[TODO: look up EUM in Choices and rework the following paragraph]
+
+Expected utility maximisation is a well-regarded norm of decision theory. As discussed above, part of expected utility maximisation's appeal is that any agent who satisfies a series of reasonable axioms and has a coherent set of preferences over outcomes is an expected utility maximiser\footnote{TODO: CITATION}. Additionally, agents who choose actions with the highest expected utility maximise their long-term utility\footnote{TODO: CITATION}. 
+
+For these reasons, the dominant norm of contemporary decision theory is that agents should maximise expected utility. However, alternative decision theories which do \textit{not} advocate expected utility maximisation have been formulated, partly in response to perceived inadequacies in the way expected utility maximisation values the St. Petersburg and Pasadena games. Works such as \citep{easwaran2009dominance}, \citep{colyvan2008relative} and \citep{colyvan2006no} position dominance as an alternative or superior principle to base decisions on.
+
+The dominance principle states that action A is preferred to action B just in case that, for every state S, the utility of the outcome resulting from action A in state S is greater than or equal to the utility of the outcome resulting from action B in S, and that for at least one state A's outcome has strictly greater utility than B's outcome [TODO: CITATION]. 
+
+Dominance reasoning and expected utility maximisation often endorse the same action. However, there are problems (such as the Pasadena paradox and its variants) where expected utility maximisation offers no advice at all and ``falls silent'' \citep{nover2004vexing}, but dominance reasoning can still accurately evaluate the relative attractiveness of related gambles\footnote{For example, the Altadena game has payoffs one dollar higher than each corresponding payoff in the Pasadena game. Intuitively the Altadena game is more valuable than the Pasadena game, but expected utility theory can't say why. But as \citep{colyvan2006no} demonstrates, the Altadena game dominates the Pasadena game, demonstrating that sometimes ``dominance reasoning gives clear advice: choose the Altadena game. Standard (expected utility) decision theory, on the other hand, offers us no advice.''}. There are other problems, such as the simple example below, where neither action dominates the other, but expected utility reasoning shows action A is clearly better than B
+
+\begin{center}
+Action A: 90\% chance of \$100, 10\% chance of \$2
+Action B: 90\% chance of \$800, 10\% chance of \$1
+\end{center}
+
+Worse still, there are problems where expected utility and dominance reasoning give conflicting advice, such as Newcomb's Paradox [TODO: CITATION]. Some decision theorists, motivated by expected utility's silence on Pasadena problems and conflict with Newcomblike problems, have developed decision theories which therefore either disregard expected utility, or consider it an alternative, perhaps subordinate concern to dominance. For example, \citep{colyvan2006no} espouses a pluralistic approach to decisionmaking where either dominance reasoning or expected utility is used whenever the other theory ``falls silent''. In both \citep{easwaran2009dominance} and \citep{colyvan2008relative} dominance is the primary concern of decisionmaking, and expected utility concerns can be derived from a generalised decision mechanism.
+
+Agents who follow these alternative theories may not be vulnerable to HULP-exploitation. In HULP problems, the HULP action does not dominate the walk away action, so (depending on how exactly the theory values expected utility) agents are not compelled to pay any price for it.
+
 \subsection{Agents with bounded utility functions}
 \subsection{Agents with rationally negligible probability cutoffs}
 
