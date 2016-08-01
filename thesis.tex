@@ -243,7 +243,21 @@ My conclusion is that although bounded-utility agents will be invulnerable to ma
 
 Bounding utility attacks the High Utility aspect of HULP problems. Can we attack the Low Probability aspect instead? \citep{arrow1951alternative} considers the idea that ``events whose probability is sufficiently small are to be regarded as... impossible.'' Intuitively, if we decide to consider events with probability less than a very small number \(\epsilon\) as impossible (i.e. treat them as though they had probability 0), then the expectation of the St. Petersburg game becomes finite (because only finite terms will have nonzero probability). It would also allow agents to rule out the possibility of God's heaven, Pascal's Mugger, or any other HULP outcome which fell below the \(\epsilon\).
 
-However, Arrow notes this ``principle of neglect of small probabilities... seems extremely arbitrary in its specification of a particular critical probabilities.'' His critique continues: for any probability cutoff \(\epsilon\), how would one evaluate a decision problem with \(\frac{1}{\epsilon}\) distinct possible outcomes each with probability \(\epsilon\)? One of these outcomes will definitely occur, but they all seem to be ruled out of our consideration by the probability cutoff.
+However, Arrow notes this ``principle of neglect of small probabilities... seems extremely arbitrary in its specification of a particular critical probabilities.'' His critique continues: for any probability cutoff \(\epsilon\), how would one evaluate a decision problem with \(\frac{1}{\epsilon}\) distinct possible outcomes each with probability \(\epsilon\)? One of these outcomes will definitely occur, but they all seem to be ruled out due to being below the probability cutoff.
+
+This reasoning demonstrates why it would be unwise to exclude from consideration all events below a certain probability. However, \citep{smith2014evaluative} proposes a more nuanced system of probability cutoffs called \textit{truncation} which defeats Arrow's arguments.
+
+Smith's theory is motivated by the idea that, like engineering theory, decision theory should not require infinite precision, that instead all calculations should account for a degree of `tolerance' or measurement error. 
+
+\quote{``The requirement on ideal decision makers cannot be that they take into account arbitrarily small probabilities... infinite precision cannot be required: rather, in any given context, there must be some finite tolerance -- some positive threshold such that ignoring all outcomes whose probabilities lie below this threshold counts as satisfying the norm.''}
+
+Following this reasoning, Smith proposes the idea of \textit{rationally negligible probabilities} (RNP):
+
+\quote{``For any lottery featuring in any decision problem faced by any agent, there is an \(\epsilon\) > 0 such that the agent need not consider outcomes of that lottery of probability less than \(\epsilon\) in coming to a fully rational decision.''}
+
+I will analyse (RNP) informally for the remainder of this section and delve into formal analysis in the following section. (RNP) is justified by the idea that ``in any actual context in which a decision is to be made, one never needs to be infinitely precise in this way -- that it never matters.'' Clearly, infinite precision matters in some sense, as its presence or absense may change which action one's decision theory endorses. For example, standard expected utility endorses trading any finite sum of money for entry to the St. Petersburg game. However, (RNP) implies there is some maximum amount above which the RNP-following agent should not pay. Clearly, adopting or disavowing (RNP) may change which action an agent chooses.
+
+Smith acknowledges this and claims ``factoring in outcomes of lower and lower probability ad infinitum does not make one’s decision any better, any more rational. Specifying zero tolerance -- infinite precision -- on the norm that one ignore outcomes of probability zero will, in general, lead to different decisions being made -- but (the idea goes) they will not be any more rational.'' A consequence of this reasoning is that two ideal rational agents may both rationally decide on two different outcomes\footnote{TODO: does this violate Aumann's Agreement Theorem?}
 
 
 
