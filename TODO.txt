@@ -1,0 +1,7 @@
+TODO
+
+[ ] Discuss LULP
+[ ] Expand discussion of preference reordering
+[ ] Analyse RNP in more detail, explicitly show how it solves HULP gambles
+[ ] Discussion of epistemology and agency - how do agents store the infinite possible states of the world? How are they representing them? Some models of agency won't even consider HULP problems because their payoff hypotheses are too small?
+[ ] 
