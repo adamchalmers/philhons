@@ -1,0 +1,129 @@
+SPP & PM have diffs w/ unbounded utility functions.
+Even if you bind hte U, you still get bad results. DT still overvalues it.
+May draw out a different highlight of SPP, 
+NJJS: about Pasadena but one suggestion is: you need to truncate them. This solution applies to PM and 
+The threshold is determined by utility... but then to calculate the context sensiivity you need EU.
+
+2 objective thresholds:
+ - Hume on miracles - when is it rational to believe in miracles?
+ - Kahneman on bounded rationality - we can only consider a limited set of hypotheses
+ 
+
+Constraints on epsilon - if there's a link between problems, there has to be a link between epsilons?
+
+Write an abstract for a potential thesis.
+Possible chapter headings
+2 sentences for each chapter
+Write a first chapter - get into character while writing and upon rereading (introduction)
+Audience: your honours student peers, or a note to your former self. Someone very smart who doesn't know about decision theory specifically.
+Someone smart, caring about you and willing to put in the time but not a philosopher.
+Have a draft by late August.
+Can't really state the problem until the technical machinery is in place. Start by explaining "here's why even you need to know this stuff. Here's roughly what the problem is. Now to flesh that out properly, here's the formal machinery, explain that, now we can start properly."
+Introductory chapter which states the problem and explains why it's important. Motivation for the problem. Quote Hajek etc on why this is important. 
+
+1. Rough statement, motivation (important to explain importance)
+2. Technical machinery, restatement
+3. Content
+4. Solution
+5. Criticism
+6. Conclusion, future research, speculation
+
+In the first chapter "locate the chapter in the broader field". Litter with references. Cite the foundational papers, cite the other paradoxes, 
+
+Job is just to expose RNP to critique. Even a critical survey is good. Original argument is icing on the cake, no need to go aiming for it yourself. That will happen organically.
+
+Mon 25th - give 1st chapter
+
+
+Principle of uniform solutions applies to HULP 
+Prioritise cutoffs over HULP text.
+That you can give a cutoff is trivial, but giving a systematic account of these cutoffs would be interesting. Give a systematic story about what the epsilon is for each case and how it relates to the problem transformations.
+
+Mention LULP in correspondence to HULP. Remind readers that negative cases exist but then only treat the maths with one side.
+Beware that your maths is being intuited by risk-aversion. You might need to flip back to LULP because 
+
+"overvalues the bet"
+
+Showing HULPs have the same structure would be nice, but not fully necessary. 
+
+The point about being overavalued often gets neglected here. Overvaluing is the main problem.
+
+HULP = class of games which DT overvalues
+
+
+
+
+1.5 page explanation of what the problem is, aimed at the guy in the pub. Problems w standard theory overvaluing certain gambles. You can qualify any oversimplifications that you make. Explain why it's important. Introduce the technical machinery as you go along. 
+
+
+Archimedian condition - wtf is that
+
+Any maths: ask "am I using this now?" if not save until later. You can be handwavy right now. EU = average winning you can take home now. Feel free to be handwavy now.
+
+Stick to St. Petersburg from now on. 
+
+
+Make sure you hamer homoe how important decision theory is, if you introeduce paradoxes too quickly then people will want to just abandon DT entirely.
+
+DT is used in conservational biology, public policy
+
+This is an introduction to research, show it to whoever you want. Attribute to discussion groups etc in acknowledgements or footnotes for something specific
+
+Epsilon cutoff should be the cutoff under which the agent no longer has enough time to consider more hypotheses. It should be the probability event horizon OR the deliberation time cutoff.
+
+===
+Chapter 2
+===
+
+Don't want your preferences to change erratically, but do want your preferences to evolve
+Tell the story in terms of pure utility to avoid diminishing returns on monetary value.
+Empirical work on how much people will actually pay for St. Petersburg. What's disturbing isn't the common person, but rather decision theorists. Expert opinion disagrees with it.
+Relax the headings
+Utility swamp
+Bayes is the dynamics/evolution of probability. What is the dynamics/evolution of preferences?
+Show it's not an update, not an evolution, but rather a complete reordering at someone else's whims.
+"There's little about preference change, but clearly this isn't good, it's forced on you just because you value a bet at a certain value etc etc"
+
+How is this different to insurance against an unlikely event?
+
+With an unlikely event, the magnitude is fixed and therefore, given the probability of disaster occuring and a finite probability distribution over possible damages, you can calculate a fixed price maximum price you should pay for a given insurance policy (ignoring the effects of )
+
+However, with a HULP problem, there is no upper limit to the amount of money an agent should pay to take the HULP action, whether that is buying a St. Petersburg ticket, donating to Church, paying a Mugger, etc. 
+
+General decision theory: sometimes dominance reasoning helps us where EUM doesn't. For example, the Altadena game should be preferred to the Pasadena game. Why? Both games have undefined EU. But Altadena dominates Pasadena. Therefore dominance is helpful in a way that EUM is not.
+
+In thesis, discuss the bounded utility proposal, cite NJJ's ECR paper's reasons for ignoring BU theory.
+
+Chapter 3 needs to be Possible solutions. Include bounded utility, RNP, limit of infinite choices, etc. 
+
+Any action you take might result in breaking the Mugging - unsure if this is a real problem for my analysis
+
+"Why can't they either estimate or prove that eating an apple has more expected utility (by please more gods overall than not eating an apple, say), without iterating over each god and considering them separately? And if for some reason you build an AI that does compute expected utility by brute force iteration of possibilities, then you obviously would not want it to consider only possibilities that "have been brought to their attention in the last minute". That's going to lead to trouble no matter what kind of utility function you give it." -- Wei Dai
+
+Pascal's Mugging: doesn't require infinity
+St. Petersburg Paradox: doesn't require confidences, doesn't require alternative hypotheses???
+Pascal's Wager: doesn't require confidences, 
+
+General problem of how do you deal with the mixed strategy of disobeying god every time you do anything
+
+Perhaps the "solution" to HULP is to go back to probability event horizons: once you're willing to consider this you should be willing to consider hell and invisible muggers. This seems to be a general problem for decision theory or agent theory. How do you deal with infinite hypotheses about the world? How do you adddress the promotion of hypotheses to consideration?
+
+======================
+
+Carl Shulman's responses: This doesn't work with an unbounded utility function, for standard reasons:
+
+1) The mixed strategy. If there is at least one lottery with infinite expected utility, then any combination of taking that lottery and other actions also has infinite expected utility. For example, in the traditional Pascal's Wager involving taking steps to believe in God, you could instead go around committing Christian sins: since there would be nonzero probability that this would lead to your 'wagering for God' anyway, it would also have infinite expected utility. See Alan Hajek's classic article "Waging War on Pascal's Wager."
+
+Given the mixed strategy, taking and not taking your bet both have infinite expected utility, even if there are no other infinite expected utility lotteries.
+
+2) To get a decision theory that actually would take infinite expected utility lotteries with high probability we would need to use something like the hyperreals, which would allow for differences in the expected utility of different probabilities of infinite payoff. But once we do that, the fact that your offer is so implausible penalizes it. We can instead keep our money and look for better opportunities, e.g. by acquiring info, developing our technology, etc. Conditional on there being any sources of infinite utility, it is far more likely that they will be better obtained by other routes than by succumbing to this trick. If nothing else, I could hold the money in case I encounter a more plausible Mugger (and your version is not the most plausible I have seen). Now if you demonstrated the ability to write your name on the Moon in asteroid craters, turn the Sun into cheese, etc, etc, taking your bet might win for an agent with an unbounded utility function.
+
+Also see Nick Bostrom's infinitarian ethics paper.
+
+As it happens I agree that human behavior and intuitions (as I weight them) in these situations are usually better summed up with a bounded utility function, which may include terms like the probability of attaining infinite welfare, or attaining a large portion of hyperreal expected welfare that one could, etc, than an unbounded utility function. I also agree that St Petersburg lotteries and the like do indicate our bounded preferences. The problem here is technical, in the construction of your example.
+
+================================
+
+[Arrow 1951 pg 414] considers RNPs proposed by Buffon and rejects them so: "This principle seems extremely arbitrary in its specification of a particular critical probability and also runs into much the same dif- ficulties of classification as does the Principle of Insufficient Reason. In an extreme case, suppose that we find an exhaustive set of mutually exclusive indivisible events, each of which has a probability less than the critical value. It would be contradictory to say that all of them were impossible, since one must occur. This case actually occurs when a continuous random variable is considered"
+
+You can encrypt your utility function to hide it from the mugger
