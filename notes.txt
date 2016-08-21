@@ -127,3 +127,14 @@ As it happens I agree that human behavior and intuitions (as I weight them) in t
 [Arrow 1951 pg 414] considers RNPs proposed by Buffon and rejects them so: "This principle seems extremely arbitrary in its specification of a particular critical probability and also runs into much the same dif- ficulties of classification as does the Principle of Insufficient Reason. In an extreme case, suppose that we find an exhaustive set of mutually exclusive indivisible events, each of which has a probability less than the critical value. It would be contradictory to say that all of them were impossible, since one must occur. This case actually occurs when a continuous random variable is considered"
 
 You can encrypt your utility function to hide it from the mugger
+
+Possible objection to me: "You should act on all information you have and carefully consider all possible risks." This is untrue. No-one can consider all possible risks. The justice system does not avoid jailing people because there might be an earthquake in the jail. After all, there might be an earthquake ANYWHERE. 
+
+Possible objection: you ought to take all risks seriously. This can't be true. If you took every risk seriously you'd never have left the house. At the point where you start to worry about Mugging you have to worry about unseen muggers. Sure, the unseen muggers are less likely, but if their punishments are bad enough then obeying them still dominates obeying the seen mugger.
+
+RNP is justified because it solves the contagion problem. It lets you stop worrying about appeasing various gods and instead focus on achieving your goals.
+
+Don't focus on general agency considerations. It's all a bit wishy washy. This is academic decision theory, not MIRI decision theory. We don't need a theory of agency or computational epistemology. Just decision problems.
+
+
+Chapter 5 of Probability Theory: The Logic of Science, page 128 has highlighted bits.
