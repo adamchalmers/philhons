@@ -5,21 +5,36 @@ show RNP chops off PM and PW
 491-493
 
 
-
-
 =====
 Me
 =====
 
-There is a norm of decision theory which says to ignore outcomes whose probability is zero. Because this norm mentions a specific probability value (zero), it is the kind of norm where it makes sense to impose a tolerance: zero plus or minus e
-
 Why shouldn't we take infinite precision to be required? Can't be because it is difficult (because often it's very easy, e.g. St Petersburg only requires high school arithmetic to achieve infinite precision).
 
-=====
-Mark Colyvan:
-=====
+===
 
-Pp. 18--19: I think you're relying too heavily on Nick's own words. When you quote an author, there should be a point --- it shouldn't just be that you can't be bothered putting the point in your own words.
+RATIONAL GROUNDS FOR CHOOSING EPSILON
 
-P.19 You mention that bounded utility is arbitrary and lacks motivation. I agree. You note that RNP is not without motivation but you do not take up the arbitrariness issue. There is clearly some arbitrariness here. Of course an epsilon can be chosen to avoid trouble in any case, but the epsilon will need to be hand picked in each case. You need to say something about this obvious arbitrariness -- especially since you've charged bounded utility with being arbitrary.
+Standard probability theory implies that if a theory becomes overwhelmingly unlikely then evidence which might at first seem to confirm it actually turns out to deny it. In [TODO: CITATION JAYNES] he uses the example of Mrs. Smith, an apparent clairvoyant who was the subject of [CITATION: ESP PAPER]. 
 
+At first, the result of CITATION seem to confirm that Mrs. Smith possessed psychic powers. She correctly identified k cards out of n, which given the assumption of random and independent card-choice, would be massively unlikely under the null hypothesis of ``Mrs. Smith doesn't have psychic powers''. It is, however, quite likely under the complementary hypothesis ``Mrs Smith has psychic powers'' and therefore her performance in the card-guessing experiment would seem to confirm the psychich hypothesis over the null hypothesis.
+
+However, as Jaynes points out, this is a naive application of probability theory in that it does not account for the range of \textit{other} hypotheses which could have also generated the same data. Such hypotheses include [TODO: quote from Jaynes about deception hypotheses]. When the full range of possible hypotheses is considered, Bayesian updating confirms the deception hypotheses over both the null \textit{and} psychic hypothesis. This demonstrates how an observation we first took as evidence for an unlikely theory can actually be evidence \textit{against} it.
+
+In general, if a theory's prior probability is low enough, and deception easy enough to perform successfully, observing a prediction of the unlikely theory will actually confirm the deception hypothesis. Deception hypotheses are always possible, as they include systematic flaws in an agent's perception, cognitive errors, hallucinations, dreams etc. Even a perfectly rational agent needs to consider these deception hypotheses \textemdash after all, mere rationality does not protect you from a brain aneurism, a RAM or hard drive corruption, or a Godlike agent interfering with your vision, all of which provide grounds for disbelieving your senses. 
+
+This implies that agents have some theories which are, in practice, so unlikely as to be unconfirmable. If a hypothesis H is extraordinarily less likely than someone spending a lot of time and effort trying to convince you of H, then observations predicted by H will actually confirm deception(H). As Jaynes says, ``until we can rule out the possibility of deception, evidence will not convince us of ESP'' [TODO: look up actual quote]. But, as agents cannot practically rule out \textit{some} form of deception, we will always have to live with unconfirmable hypotheses.
+
+Probability theory (if one assumes deception is possible) tells us that some extraordinarily unlikely hypotheses can't practically be confirmed. RNP tells us to choose a cutoff and disregard outcomes less likely than it. I propose agents combine these two theories:
+
+RNP* When facing a decision problem, if there is a hypothesis they could not reasonably confirm through observing its predictions, choose a probability cutoff \epsilon to be the prior probability of this theory.
+
+=== 
+
+Our desiridata
+
+Concerns:
+ - How do you gather evidence about something
+ - Can you ever disconfirm deception? Have we smuggled skepticism in?
+ - What if an agent becomes convinced of ESP? How could any evidence disconfirm it? How does the inverse irrational case work? Doesn't Bayesian updating say you should eventually converge on the truth?
+ - 
