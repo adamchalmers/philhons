@@ -1,5 +1,5 @@
 SPP & PM have diffs w/ unbounded utility functions.
-Even if you bind hte U, you still get bad results. DT still overvalues it.
+Even if you bound the utility, you still get bad results. DT still overvalues it. (It should be valued at its "realistic value" not at the upper limit of your utility function!)
 May draw out a different highlight of SPP, 
 NJJS: about Pasadena but one suggestion is: you need to truncate them. This solution applies to PM and 
 The threshold is determined by utility... but then to calculate the context sensiivity you need EU.
@@ -138,3 +138,9 @@ Don't focus on general agency considerations. It's all a bit wishy washy. This i
 
 
 Chapter 5 of Probability Theory: The Logic of Science, page 128 has highlighted bits.
+
+Chapter 2 of thesis needs a discussion of contagion problem: any action might affect your chance of being offered a HULP problem, which means all your actions have infinite expected utility. This contagion problem is a more general DT concern (cf N&H Pizza problem wrt Pasadena)
+
+MC: That all sounds good. For what it's worth, I don't think that your examples of ignoring risks work. The examples (in my view) simply show that people are willing to accept risks (even of death), if the risk is low enough and the reward is high enough. This sounds like expected utility theory to me. (There are also issues of uncertainty and ignorance of the risks in question; e.g. what is the relative risk of being killed by violence on the street versus in the home? I suspect that in many reference classes the latter is more likely.) Similarly people buy lottery tickets with 1 in a million chance of winning but this does not show that we are prepared to ignore risks of 1-10^-6. It simply shows that we act according to expected utility. I think your cases can be similarly construed. Indeed, here is the big challenge you need to address: the choice of epsilon is determined by the stakes but how this is done needs to be spelled out in a way that is distinct from expected utility. Moreover, whatever account is advanced of this context setting for the choice of epsilon needs to be motivated and its superiority to standard expected utility calculations needs to be demonstrated.
+
+As you can tell, I remain sceptical that this can be done but that doesn't matter. A good stab at making such a case will make for a good chapter or two of your thesis.

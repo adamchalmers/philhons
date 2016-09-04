@@ -293,21 +293,40 @@ It seems (RNP) offers a way for agents to avoid HULP-exploitation without incurr
 
 In previous chapters we have seen that HULP-exploitation leaves standard decision theoretic agents vulnerable to having their preferences arbitrarily reordered. This would, of course, greatly interfere with the agent's goals and interests. Therefore, if a principle allows agents to avoid HULP-exploitation without other adverse consequences, it should be adopted as a norm of rationality. I have proposed Dr. Smith's Rationally Negligible Probabilities as a hypothesis which meets these criteria. In this chapter, I will defend the hypothesis against charges of arbitrariness and formally show how it protects agents from HULP-exploitation.
 
-\subsection{Saying no to Pascal: formal analysis of RNP and HULP}
+\subsection{How RNP defeats HULP: a formal analysis}
 
 % TODO: content
 
 \subsection{Limits on agency and how to choose epsilon}
 
-In the previous chapter, I claimed it would be arbitrary to insist rational agents use bounded utility functions. (RNP) could be seen as equally arbitrary \textemdash why insist decision makers should use tolerances in their decision making? In the case of the St. Petersburg paradox, infinite precision can be obtained easily by summing a sequence, a feat which requires only high school level mathematics. Why should infinite precision not be used when convenient? I believe concerns of theoretical (epistemic) and practical (instrumental) rationality justify the use of rationally negligible probabilities for agents. No agent can consider all possible hypotheses \textemdash at some point, one must stop considering risks and actually \textit{do} something. This implies all agents should choose a tiny probability below which some hypotheses aren't considered.
+In the previous chapter, I claimed it would be arbitrary to insist rational agents use bounded utility functions. However, (RNP) could be seen as equally arbitrary, for two different reasons.
 
-\subsubsection{Epistemic limits on agency}
+Firstly: is the adoption of RNP itself arbitrary? Why insist decision makers should use tolerances in their decision making? In the case of the St. Petersburg paradox, infinite precision can be obtained easily by summing a sequence, a feat which requires only high school level mathematics. Why should infinite precision not be used when convenient?
 
-% TODO: content
+Secondly: is the choice of epsilon arbitrary? Is there a principled way to choose an appropriate epsilon? If not, then RNP should be criticised for having a free parameter which can be set to arbitrary values in order to produce endorsements of whatever action seems intuitively reasonable to decision theorists. 
 
-\subsubsection{Practical limits on agency}
+I will discuss two motivations for RNP, which defend it from the first charge of arbitrariness. Each motivation leads to an account of how to choose epsilon in a systematic way, which defends RNP from the second charge of arbitrariness.
 
-% TODO: content
+\subsubsection{Finite deliberation}
+
+It is \textit{prima facie} tempting to believe the following proposition: ``all rational agents should consider each hypothesis which could affect their future.'' This makes a normative claim about rationality, which I will call Consider Each Hypothesis (CEH)\footnote{It is unclear whether the duty is only to consider hypotheses which might affect the agent's future. For example, a photon outside an agent's light cone can have no causal effect on the agent's future on our current best physical theories. However, agents operating with poorer physical theories \textemdash or agents who reason with uncertainty over physical theories \textemdash may need to consider the photon even if no causal influence is possible.}. This seems reasonable \textemdash surely rationality requires careful consideration of each possible state that could hold, and each state's consequences for the agent's action. One of the strongest objections to RNP would be that it violates CEH, and that of the two, CEH is a more defensible principle of rationality. To defend RNP I will show that CEH violates an even stronger norm of rationality and therefore should be disregarded.
+
+While CEH appears reasonable, I believe it to be false, because it conflicts with a norm of rationality which is often assumed but rarely explicated: that \textit{decision making procedures should terminate in a finite amount of time}. Call this the \textit{termination principle}. An agent's deliberation should conclude in a finite amount of time \textemdash after all, to spend the remainder of one's days pondering a decision is rarely the correct action in a situation. 
+
+If an agent obeys the termination principle, they can only do a finite amount of cognitive work during the decision-making process. No matter how intelligent, knowledgeable or quick-thinking they may be, all agents have a finite amount of cognitive resources, and therefore can only run finite computations in a given moment of time. If every hypothesis has some computational cost, then examining an infinite number of hypotheses would violate the termination principle\footnote{Agents with infinite computational resources could perhaps consider infinite hypotheses (assuming their resources and the number of hypotheses have the same cardinality), however, an account of such agents is beyond the scope of this work.}. 
+
+% TODO: discuss what would happen if you /could/ consider infinite hypotheses without violating TP. It'd still be bad because there's infinite stupid ways your problem could lead to a Pasadena game and then your DT becomes useless.
+
+I believe the termination principle to be an essential norm of rationality. A decision procedure which does not terminate is no decision procedure at all \textemdash it provides no guidance, not even claiming ambivalence to all options. It falls silent. Given this, if CEH violates the termination principle then I feel we should disregard CEH. Therefore, any criticism of RNP which claims agents should consider all relevant hypotheses must also be disregarded. 
+
+This reasoning not only justifies RNP, but also clarifies it, because it guides us towards a choice of epsilon. If agents can't consider all hypotheses, then naturally, there must be some ordering according to which hypotheses are considered, and a point after which hypotheses are no longer considered. How is this termination point to be chosen?
+
+Consider an agent who is travelling down a road, considering which of two upcoming forks to take. Naturally, environmental circumstances will affect how much time they allocate to making their decision. If the agent is racing in a four horse chariot down rocky terrain, they will need to make their decision quickly to avoid crashing. Alternatively, if the agent is walking at a leisurely pace with no pressing urgency, they can stop and consider the decision for a much longer time. 
+
+The available time with which to make a decision will limit how many hypotheses the agent may consider. The chariot-riding agent might only decide based on how wide each fork's path is. The leisurely-strolling agent can consider a range of hypotheses about each path \textemdash where it leads to, how long it might be, how scenic a route it might encompass, etc. This suggests one way to choose a cutoff for hypothesis-consideration: based on the available time to decide each hypothesis. If an agent has \(n\) seconds to make a decision, and each hypothesis takes approximately \(t\) seconds to consider, then the agent can consider an average of \(\frac{n}{t}\) hypotheses. I would suggest hypotheses be considered in order of prior likelihood, because (on our best laws of physics) there are infinite hypotheses like ``all the atoms constituting the decision agent rearrange into a puddle with \textit{this} specific shape,'' ``all the atoms constituting the decision agent rearrange into a puddle with \textit{that} specific shape,'' etc, all of which have miniscule probability and merit little consideration. 
+
+I suggest that the hypothesis-considering cutoff and the RNP probability cutoff should align: an agent's choice of epsilon should not be significantly lower than the probability of the lowest-probability hypothesis the agent can consider in their available decision time. After all, if an agent isn't going to consider a hypothesis, they can hardly motivate their actions by appeal to that hypothesis' consequences.
+
 
 \bibliographystyle{plainnat}
 \bibliography{thesis}
