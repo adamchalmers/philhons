@@ -1,3 +1,8 @@
+
+Notes.txt
+===
+
+
 SPP & PM have diffs w/ unbounded utility functions.
 Even if you bound the utility, you still get bad results. DT still overvalues it. (It should be valued at its "realistic value" not at the upper limit of your utility function!)
 May draw out a different highlight of SPP, 

@@ -291,23 +291,15 @@ It seems (RNP) offers a way for agents to avoid HULP-exploitation without incurr
 
 \section{RNP and principled choices of epsilon}
 
-In previous chapters we have seen that HULP-exploitation leaves standard decision theoretic agents vulnerable to having their preferences arbitrarily reordered. This would, of course, greatly interfere with the agent's goals and interests. Therefore, if a principle allows agents to avoid HULP-exploitation without other adverse consequences, it should be adopted as a norm of rationality. I have proposed Dr. Smith's Rationally Negligible Probabilities as a hypothesis which meets these criteria. In this chapter, I will defend the hypothesis against charges of arbitrariness and formally show how it protects agents from HULP-exploitation.
-
-\subsection{How RNP defeats HULP: a formal analysis}
-
-% TODO: content
-
-\subsection{Limits on agency and how to choose epsilon}
-
-In the previous chapter, I claimed it would be arbitrary to insist rational agents use bounded utility functions. However, (RNP) could be seen as equally arbitrary, for two different reasons.
+In previous chapters we have seen that HULP-exploitation leaves standard decision theoretic agents vulnerable to having their preferences arbitrarily reordered. This would, of course, greatly interfere with the agent's goals and interests. Therefore, if a principle allows agents to avoid HULP-exploitation without other adverse consequences, it should be adopted as a norm of rationality. I have proposed Dr. Smith's Rationally Negligible Probabilities as a hypothesis which meets these criteria better than competing theories, such as bounded utilities. In the previous chapter, I claimed that bounded utilities were arbitrary and unmotivated, however, similar charges could be levelled against (RNP) in two ways.
 
 Firstly: is the adoption of RNP itself arbitrary? Why insist decision makers should use tolerances in their decision making? In the case of the St. Petersburg paradox, infinite precision can be obtained easily by summing a sequence, a feat which requires only high school level mathematics. Why should infinite precision not be used when convenient?
 
 Secondly: is the choice of epsilon arbitrary? Is there a principled way to choose an appropriate epsilon? If not, then RNP should be criticised for having a free parameter which can be set to arbitrary values in order to produce endorsements of whatever action seems intuitively reasonable to decision theorists. 
 
-I will discuss two motivations for RNP, which defend it from the first charge of arbitrariness. Each motivation leads to an account of how to choose epsilon in a systematic way, which defends RNP from the second charge of arbitrariness.
+This chapter will explain why I do not find these critiques convincing. I will discuss two motivations for RNP, which defend it from the first charge of arbitrariness. Each motivation leads to an account of how to choose epsilon in a systematic way, which defends RNP from the second charge of arbitrariness. 
 
-\subsubsection{Finite deliberation}
+\subsection{Finite deliberation}
 
 It is \textit{prima facie} tempting to believe the following proposition: ``all rational agents should consider each hypothesis which could affect their future.'' This makes a normative claim about rationality, which I will call Consider Each Hypothesis (CEH)\footnote{It is unclear whether the duty is only to consider hypotheses which might affect the agent's future. For example, a photon outside an agent's light cone can have no causal effect on the agent's future on our current best physical theories. However, agents operating with poorer physical theories \textemdash or agents who reason with uncertainty over physical theories \textemdash may need to consider the photon even if no causal influence is possible.}. This seems reasonable \textemdash surely rationality requires careful consideration of each possible state that could hold, and each state's consequences for the agent's action. One of the strongest objections to RNP would be that it violates CEH, and that of the two, CEH is a more defensible principle of rationality. To defend RNP I will show that CEH violates an even stronger norm of rationality and therefore should be disregarded.
 
@@ -326,6 +318,16 @@ Consider an agent who is travelling down a road, considering which of two upcomi
 The available time with which to make a decision will limit how many hypotheses the agent may consider. The chariot-riding agent might only decide based on how wide each fork's path is. The leisurely-strolling agent can consider a range of hypotheses about each path \textemdash where it leads to, how long it might be, how scenic a route it might encompass, etc. This suggests one way to choose a cutoff for hypothesis-consideration: based on the available time to decide each hypothesis. If an agent has \(n\) seconds to make a decision, and each hypothesis takes approximately \(t\) seconds to consider, then the agent can consider an average of \(\frac{n}{t}\) hypotheses. I would suggest hypotheses be considered in order of prior likelihood, because (on our best laws of physics) there are infinite hypotheses like ``all the atoms constituting the decision agent rearrange into a puddle with \textit{this} specific shape,'' ``all the atoms constituting the decision agent rearrange into a puddle with \textit{that} specific shape,'' etc, all of which have miniscule probability and merit little consideration. 
 
 I suggest that the hypothesis-considering cutoff and the RNP probability cutoff should align: an agent's choice of epsilon should not be significantly lower than the probability of the lowest-probability hypothesis the agent can consider in their available decision time. After all, if an agent isn't going to consider a hypothesis, they can hardly motivate their actions by appeal to that hypothesis' consequences.
+
+TODO: finish this section, strengthen it, I'm not sure if it's true or not.
+
+\subsection{Finite-resolution decision theory}
+
+In this section, I propose a method for choosing epsilon on purely epistemic and empirical grounds without recourse to expected utility. I begin by foregrounding how how decision theory presupposes the existence of a deciding agent, a decision problem, mathematical truth, etc. Most of the time, these can all be assumed, however Cartesian reasoning implies there is always a tiny (although positive and nonzero) chance that these conditions fail to hold. Clearly, decision theory would fail to provide helpful, actionable advice if these foundational assumptions were untrue. If these assumptions fail with probability \(e\) (for a particular agent or class of agents), then decision theory will fail to helpful, actionable advice to them regarding events with likelihood below \(e\). I develop the analogy of a microscope or a ``probability event horizon'' to illustrate my point \textemdash just as an electron microscope's mechanism prevents it from examining anything smaller than an electron, decision theory cannot reasonably talk about events whose probability is surpassed by a failure of decision theoretic assumptions. Similarly, just as light cannot escape a black hole's event horizon once crossing it, a hypothesis which falls below the ``probability event horizon'' cannot ever be reconfirmed by empirical evidence, because it has become less likely than a violation of the assumptions which make empirical methodology possible. By analogy to the finite resolution of a microscope, I claim each agent's decision theory will have a finite probability-resolution below which it ceases to operate effectively, and as such we should follow the Rationally Negligible Probabilities hypothesis and choose epsilon equal or close to that value.
+
+
+
+
 
 
 \bibliographystyle{plainnat}
