@@ -323,7 +323,55 @@ TODO: finish this section, strengthen it, I'm not sure if it's true or not.
 
 \subsection{Finite-resolution decision theory}
 
-In this section, I propose a method for choosing epsilon on purely epistemic and empirical grounds without recourse to expected utility. I begin by foregrounding how how decision theory presupposes the existence of a deciding agent, a decision problem, mathematical truth, etc. Most of the time, these can all be assumed, however Cartesian reasoning implies there is always a tiny (although positive and nonzero) chance that these conditions fail to hold. Clearly, decision theory would fail to provide helpful, actionable advice if these foundational assumptions were untrue. If these assumptions fail with probability \(e\) (for a particular agent or class of agents), then decision theory will fail to helpful, actionable advice to them regarding events with likelihood below \(e\). I develop the analogy of a microscope or a ``probability event horizon'' to illustrate my point \textemdash just as an electron microscope's mechanism prevents it from examining anything smaller than an electron, decision theory cannot reasonably talk about events whose probability is surpassed by a failure of decision theoretic assumptions. Similarly, just as light cannot escape a black hole's event horizon once crossing it, a hypothesis which falls below the ``probability event horizon'' cannot ever be reconfirmed by empirical evidence, because it has become less likely than a violation of the assumptions which make empirical methodology possible. By analogy to the finite resolution of a microscope, I claim each agent's decision theory will have a finite probability-resolution below which it ceases to operate effectively, and as such we should follow the Rationally Negligible Probabilities hypothesis and choose epsilon equal or close to that value.
+In this section, I propose a method for choosing epsilon on purely epistemic and empirical grounds without recourse to expected utility. 
+
+I begin by foregrounding how how decision theory presupposes the existence of a deciding agent, a decision problem, mathematical truth, etc. Most of the time, these can all be assumed, however skeptical and empirical reasoning implies there is always a tiny (although positive and nonzero) chance that these conditions fail to hold. Clearly, decision theory would fail to provide helpful, actionable advice if these foundational assumptions were untrue. If these assumptions fail with probability \(e\) (for a particular agent or class of agents), then decision theory will fail to helpful, actionable advice to them regarding events with likelihood below \(e\). 
+
+I develop the analogy of a microscope or a ``probability event horizon'' to illustrate my point \textemdash just as an electron microscope's mechanism prevents it from examining anything smaller than an electron, decision theory cannot reasonably talk about events whose probability is surpassed by a failure of decision theoretic assumptions. Similarly, just as light cannot escape a black hole's event horizon once crossing it, a hypothesis which falls below the ``probability event horizon'' cannot ever be reconfirmed by empirical evidence, because it has become less likely than a violation of the assumptions which make empirical methodology possible. 
+
+By analogy to the finite resolution of a microscope, I claim each agent's decision theory will have a finite probability-resolution below which it ceases to operate effectively, and as such we should follow the Rationally Negligible Probabilities hypothesis and choose epsilon equal or close to that value. This is justified by examining the mathematical phenomena of ``dead hypotheses'' discussed in \citep{jaynes2003probability}, which explains how if hypothesis A makes identical predictions to hypothesis B, but has lower prior probability, no amount of evidence could confirm A over B.
+
+\subsubsection{Presuppositions of decision theory}
+
+Before beginning this section, it is important to acknowledge the difference between decision theory and decision making. Decision theory is, as per its name, the \textit{theory} of making decisions. It is not a decision making process itself, rather, it is a collection of rules, norms, algorithms and processes to guide agents in choosing actions which achieve their goals. It is important to recognize this distinction so we may acknowledge that rational choices can be made without decision theory. Even the most rational agents will often make decisions without decision theory \textemdash for example:
+
+\begin{itemize}  
+\item If a decision problem is underdetermined, e.g. ``we flip a coin. On heads, you win ten dollars. On tails, something else happens.''
+\item If the possible outcomes of an action are unknown, e.g. ``we don't know what this mysterious alien device does. Should we activate it?''
+\item If an agent has no time to deliberate before making a decision, e.g. a child suddenly runs in front of your car while you're driving down the road.
+\item If the decision maker doesn't currently have enough mental energy or cognitive resources to spend rationally analysing their choices, e.g. a spy has been captured and tortured for hours before trying to formulate an escape plan.
+\item If the agent is (perhaps temporarily) unable to think rationally, e.g. someone trying to plan their walk home while on powerful psychadelic drugs.
+\end{itemize}
+
+These examples are intended to show the reader that, in some situations, decision making agents might have both a perfect grasp of decision theory, and a genuine intention to use it towards rational choice, but simply not meet the prerequisite conditions for using decision theory. In other words, \textit{decision theory presupposes certain facts about the decision-maker and their environment}. A non-exhaustive list of these presuppositions includes:
+
+\begin{itemize}  
+\item The agent knows and understands the full specification of the decision problem.
+\item The agent has both the capability and cognitive resources to consider all relevant states, actions and outcomes and to carry out any calculations their decision theory requires.
+\item The agent is aware of their utility function.
+\item The agent has a reliable mechanism for producing thought (e.g. a working brain for a human, reliable computer hardware for an artificial intelligence, functioning biology for an alien, etc).
+\end{itemize}
+
+These are all necessary preconditions for consulting decision theory, and as such most philosophical research into decision theory takes for granted that they hold. However, I believe any agent with physically-real existence must entertain some small degree of uncertainty about whether or not they meet all these conditions. This follows from skeptical reasoning. Imagine an ideal decisionmaking agent (a wise and learned decision theory professor, an alien superintelligence, an AI), for some reason, wanted to double-check and ensure these conditions were met. What could convince the agent that these conditions hold?
+
+Our agent might introspect on their thought process and check that their thoughts are proceeding in a reasonable and correct manner. Unfortunately, this is clearly a circular process because an agent whose thought processes are malfunctioning can't trust those thought processes to notice their own malfunction. As Yossarian reasons in Catch-22, few insane people are aware of their insanity. Similarly, our ideal agent would be justified in believing they know and understand the full specification of, say, Simple Problem 1 above. But we should acknowledge the miniscule chance of error. Perhaps they misread a 1 as a 7, or perhaps some cognitive malfunction (an undiagnosed tumour, misfiring neuron or cosmic ray hitting their CPU) interfered with their calculation of expected utilities. These events are possible, but overwhelmingly unlikely. It seems our ideal agent cannot prove with absolute certainty that the meet our decision theory presuppositions.
+
+Nor should they have to. This entire argument runs similarly to the argument against skepticism \textemdash yes, the agent \textit{could} be hallucinating their every experience. They \textit{could} have misread the problem specification, no matter how many times they double-checked their understanding. Their cognition \textit{could} be defective enough that they fail to recognize their cognitive defects. But it is overwhelmingly unlikely that these events have all occurred in conjunction. Even if they have, this hypothesis doesn't guide the agent's action. If our agent knew of their mental failure, what could they possibly do to fix it? The alternate hypothesis \textemdash that the agent has reliable mental processing, accurate introspection and comprehension \textemdash has the advantage of being both more likely and being \textit{action-guiding}. 
+
+Let's consider this formally. Say an ideal rational agent considers the following hypothesis
+
+\begin{center}
+\textbf{Cognitive Skepticism Hypothesis (CSH):} my reasoning skills are persistently, systematically defective and my understanding of my environment is persistently, systematically wrong.
+\end{center}
+
+The more an agent believes this hypothesis, the less useful decision theory will be to them. After all, if an agent doesn't trust their understanding or practice of decision theory, they'll place less trust in the outputs of their decision theory, and be less inclined to take its advice seriously.
+
+I think most agents should assign (CSH) very low prior probability, for two reasons. Firstly, cognitive failures of this magnitude are very rare. \citep{perala2007lifetime} estimates 3.48\% of people experience some sort of psycotic episode in their lifetime. Only a tiny fraction of these episodes would involve systematic loss of rationality of the (CSH) kind \textemdash say, one in a thousand \textemdash and far fewer would be persistent enough to cause lasting skepticism in one's decision-making. Based on this, I would conservatively estimate the frequency of CSH-like episodes among humans at \(p = 10^-6\). Among ideal decision-making agents the frequency is likely to be far lower, because such agents would be better able to discern and process evidence of any cognitive defect incurred from psychosis or malfunction.
+
+\subsubsection{Skepticism and dead hypotheses}
+
+\subsubsection{Microscopes and the limits of decision theory}
+
 
 
 
