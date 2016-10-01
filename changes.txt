@@ -32,11 +32,12 @@ Added: One intuitive way to choose \(\epsilon\) is to choose whichever value of 
 
 Added: Note that this bound on \(\epsilon\) is motivated purely by epistemic and empirical concerns \textemdash{} \textit{not} by utility. Therefore it avoids the circularity of choosing \(\epsilon\) with reference to the stakes of the problem.
 
-
+Added: explanation of mind projection fallacy
 
 Questions:
 
 pg. 4 Are outcomes f(s,a) -> a?
+pg. 5 Eleanor suggested I cut the three arguments for EUM being a norm. Do you agree with her? She advised me to cut down the introduction to DT stuff heavily, actually. But as I understand it, one of the markers will have no background in DT so it might be valuable to keep it in.
 pg. 5 "they're axioms aren't they" what do you mean by this?
 pg. 5 You told me to "say that beliefs need to obey probability axioms". I've changed a sentence to say "Firstly, agents who maximise their expected utility (and whose beliefs obey the laws of probability theory)". Is this what you meant?
 pg. 7 Your paragraph is cut off by the margin - could you please explain your point again?
@@ -44,3 +45,5 @@ pg. 8 You've said my footnote about the utility of money and my pharmaceutical e
 pg. 9 First sentence you asked if Aztecs believed in heaven. They did - do you think I should mention this, and if so, where?
 pg. 23 Is it worth keeping the finite deliberation section in?
 pg. 35 What do you mean about the agents still being HULP exploitable? HULP exploitation can only happen if there's an option with an arbitrarily high utility and fixed low probability. epsilons greater than zero truncate the St. Petersburg paradox to a finite expected utility. Some E>0 (not all, but some) will also make PW/PM finite expected utility.
+pg. 36 I'm not sure if Pasadena counts as a HULP problem. I guess it (on some ordering) will have an arbitrarily high positive outcome, but it could also have an arbitrarily large negative outcome. Do you think my characterisation of HULP on pg. 8 is insufficient?
+I've cited your 2008 paper (pg. 38) as an example of "standard decision theory" and EUM being used interchangeably. Is that OK?
