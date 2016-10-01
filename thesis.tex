@@ -92,8 +92,6 @@ Blaise Pascal is sometimes credited with inventing decision theory when he propo
 \end{tabular}
 \end{center}
 
-What is each action's expected utility? Heaven is presumed to have infinite utility. An agent's belief in God, however, is fixed at some real number between 0 and 1
-
 If we analyse the expected utility of each action, worshipping God appears far more attractive than non-worship. Heaven is presumed to have infinite utility. An agent's belief in God, however, is fixed at some real number \(0<P(``God'')<1\), therefore the expected utility of worship will always be infinite (because multiplying a real number and infinity yields infinity). This remains true no matter how tiny the agent's estimate of God's existence is\footnote{This assumes the probability of God existing is nonzero. Arguments against Pascal's Wager based on the impossibility of God certainly exist \citep{oppy1991rescher} but are not relevant to this discussion.}. It also remains even if the religious observance is costly or demanding \textemdash{} even if the agent has to pay a large (but finite) amount of utility to perform religious observance, worshipping still maximises expected utility.
 
 \subsubsection {Pascal's Mugging}
@@ -104,11 +102,11 @@ In Pascal's Mugging, the agent is confronted by a mugger who claims to be a wiza
 However, the Mugger can promise an arbitrarily large amount of money, and our agent's belief in this claim, while low, is non-zero in accordance with norms of rationality. Suppose the probability of the Mugger telling the truth is \(p\). If the Mugger offers \$\(R\) such that \(p(R-5)+(1-p)(-5)>0\), then the agent's expected utility is maximised by giving \$5 to the Mugger, despite having no reason to believe her claims.
 
 \subsection{HULP Problems}
-These three problems share some similarities. Each gamble's expected utility is far higher than its intuitive, reasonable value, i.e. expected utility overvalues them. All involve a choice between two options:
+These three problems share some similarities. Each gamble's expected utility is far higher than its intuitive, reasonable value, i.e. expected utility overvalues them. All involve a choice between two actions:
 
 \begin{itemize}
-\item A ``walk away'' option whose only outcome has zero utility (and therefore expected utility of zero), e.g. not buying the St. Petersburg lottery, not worshipping God, and not paying the Mugger.
-\item A HULP option (High Utility payoff with Low Probability) with high expected utility, e.g. buying the St. Petersburg lottery, worshipping God and paying the Mugger.
+\item A ``walk away'' action with a single outcome which has zero utility (meaning the expected utility of the action is zero), e.g. not buying the St. Petersburg lottery, not worshipping God, and not paying the Mugger.
+\item A HULP action (High Utility payoff with Low Probability) with high expected utility, e.g. buying the St. Petersburg lottery, worshipping God and paying the Mugger.
 \end{itemize}
 
 Expected utility maximisation instructs agents to choose the HULP action over the walk-away action because the HULP action has higher expected utility. However, agents who consistently choose the HULP action in HULP problems leave themselves open to alarming consequences.
@@ -142,7 +140,7 @@ These concerns demonstrate why expected utility maximisation is inadequate as a 
 
 \subsection{Low Utility, High Probability}
 
-Before analysing HULP exploitation, I must address the inverse of HULP problems: Low Utility, High Probability (LUHP) problems. Each HULP problem has a corresponding LUHP problem which can be constructed by multiplying the utility payoffs in the HULP decision table by -1. This yields decision problems where, for example, God sends you to hell \(U=-\infty\) if you do not worship him, or a mugger threatens to ruin your life to the degree of some large negative utility (perhaps by committing mass genocide). 
+Before analysing HULP exploitation, I will address the inverse of HULP problems: Low Utility, High Probability (LUHP) problems. Each HULP problem has a corresponding LUHP problem which can be constructed by multiplying the utility payoffs in the HULP decision table by -1. This yields decision problems where, for example, God sends you to hell \(U=-\infty\) if you do not worship him, or a mugger threatens to ruin your life to the degree of some large negative utility (perhaps by committing mass genocide). 
 
 I propose that ideal rational agents should treat LUHP problems symmetrically to HULP problems. An agent can be exploited equally well by offering them a chance at entering heaven or a chance at avoiding hell. If corresponding HULP and LUHP problems appear different, or generate different intuitions, I suspect it is merely a product of the asymmetric way human brains model reward and loss. Standard decision theory values profit-making and loss-avoidance equally (assuming any diminishing returns are already factored into the agent's utility function). As my work only deals with \textit{ideal, normative} decision theory, I will only address HULP problems in this paper. However, LUHP problems could be used equally well to exploit an expected utility maximiser.
 
@@ -156,7 +154,7 @@ In the previous section, I provided an intuitive explanation of HULP exploitatio
 \item The victim now evaluates that performing A has infinite (or arbitrarily large) utility, and performs A.
 \end{itemize}
 
-This section formalises the notion of HULP exploitation and explains why immunity to such exploitation is a desirable norm of rationality. I will begin by outlining the generic form of HULP exploitation, and showing how the Max-Eliza exploitation in the previous section is a specific instance of this general exploitation method. I will then show that HULP exploitable agents can have their preferences reordered at no cost to the exploiter. Many agents are quite attached to their preferences, and would find the risk of someone arbitrarily altering them quite unacceptable. These agents should therefore avoid HULP exploitation, and immunity to HULP exploitation should be a desirable property of decision agents.
+This section formalises the notion of HULP exploitation and explains why immunity to such exploitation is a desirable norm of rationality. I will begin by outlining the generic form of HULP exploitation, and showing how the Max-Eliza exploitation in the previous section is a specific instance of this general exploitation method. I will then show that HULP exploitable agents can have their preferences reordered at no cost to the exploiter. Many agents are quite attached to their preferences, and would find the risk of someone arbitrarily altering them entirely unacceptable. These agents should therefore avoid HULP exploitation, and immunity to HULP exploitation should be a desirable property of decision agents.
 
 \subsection{How does exploitation work}
 
@@ -196,7 +194,7 @@ Two extreme views on preference-modification are tenable. In computer science an
 
 As a simple example, imagine an agent who only values paperclips. The utility they assign to a state of the world is just the number of paperclips which exist in that state of the world. If the agent can either create paperclips themselves or pay others to manufacture paperclips, then they would also resent their utility function being changed to value things other than paperclips. Why? Because then the agent would be less likely to create or commission paperclips in the future. Changing their utility function would result in fewer expected paperclips than preserving their utility function. Therefore, our agent should have an instrumental preference for preserving their utility function \textemdash{} because it furthers their intrinsic preference for paperclips. 
 
-A possible exception is that our agent might agree to modify their utility function in order to secure future paperclip creation. For example, if our agent is too poor to order any paperclips themselves, they might strike the following deal with a rich tyrant: our agent's utility function will be modified to value paperclips less, and the rich tyrant will use 10\% of their wealth to create paperclips. Depending on the exact values involved, this might result in more paperclips being created than there would be if the agent ignored the deal and kept their utility function. So there may be circumstances in which goal-driven agents agree to modify their utility function. But powerful agents (with more power to maximise their utility function) will protect their utility function from modification, because modifications will probably lead the world towards lower-value states (according to their utility function).
+An exception is possible if the agent agrees to modify their utility function to secure future paperclip creation. For example, if our agent is too poor to order any paperclips themselves, they might strike the following deal with a rich tyrant: our agent's utility function will be modified to value paperclips less, and the rich tyrant will use 10\% of their wealth to create paperclips. Depending on the exact values involved, this might result in more paperclips being created than there would be if the agent ignored the deal and kept their utility function. So there may be circumstances in which goal-driven agents agree to modify their utility function. But powerful agents (with more power to maximise their utility function) will protect their utility function from modification, because modifications will probably lead the world towards lower-value states (according to their utility function).
 
 These arguments may be true of purely goal-focused agents such as some forms of artificial intelligence. But other decisionmakers might not be so intensely attached to their utility function. Many agents desire to change their utility function, and even the most rational humans often find preference change to be desirable and meaningful. For example, few people enjoy the taste of wine when they first try it, but many consider developing such a taste to be desirable and good. Many preference changes function like this, regardless of whether or not the change is consciously chosen or self-directed. Consider a person Alex who has just started to enjoy jazz music, but can't stand Duke Ellington\footnote{I credit this argument for preference change to Dr. Mark Colyvan, who explained it during a meeting we had.}. Alex would probably enjoy having their preference against Duke Ellington altered, because enjoying the music of Duke Ellington would provide them with more chances to enjoy music and a deeper appreciation of jazz. Whether Alex grows to enjoy Duke Ellington naturally or by someone else's doing (suppose Alex's friend forced him or her to listen to Duke Ellington records until he or she developed a familiar comfort), the end result is a pleasant, desirable preference shift.
 
@@ -350,11 +348,7 @@ I will also assume that ideal rationality requires neither omniscience nor 100\%
 
 \subsubsection{Presuppositions of decision theory}
 
-Before beginning this section, it is important to acknowledge the difference between decision theory and decision making. Decision theory is, as per its name, the \textit{theory} of making decisions. It is not a decision making process itself, rather, it is a collection of rules, norms, algorithms and processes to guide agents in choosing actions which achieve their goals. It is important to recognize this distinction so we may acknowledge that rational choices can be made without decision theory. 
-
-I will return to this point soon.
-
-Sometimes rational agents need to make a decision but can't consult decision theory. In these situations, it is entirely rational to make a decision without decision theory. For example:
+Before beginning this section, it is important to acknowledge the difference between decision theory and decision making. Decision theory is, as per its name, the \textit{theory} of making decisions. It is not a decision making process itself, rather, it is a collection of rules, norms, algorithms and processes to guide agents in choosing actions which achieve their goals. It is important to recognize this distinction so we may acknowledge that rational choices can be made without decision theory. Sometimes rational agents need to make a decision but can't consult decision theory. In these situations, it is entirely rational to make a decision without decision theory. For example:
 
 \begin{itemize}  
 \item If a decision problem is underdetermined, e.g. how much would you pay for the following bet: ``we flip a coin. On heads, you win ten dollars. On tails, something else happens.''
