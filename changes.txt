@@ -1,0 +1,46 @@
+
+Old: In situations like this, decision theory offers precise mathematical analysis of each possible action and its outcomes
+New: In situations like this, decision theory offers precise mathematical analysis of how prudent each action is, based on its probable outcomes
+
+Changed EU equation to just compare o \in O(A) and P(O).U(O)
+
+Old: Many objections to Pascal’s Wager dispute specific properties of God [Mackie, 1990] or the possibility of infinite utility [McClennen, 1994]. Pascal’s Mugging was proposed by [Bostrom, 2009] in order to restrict criticism of Pascal’s Wa- ger to its decision-theoretic aspects of Pascal’s Wager, removing the need for metaphysical arguments about God or infinity.
+New: Pascal's Wager was originally proposed as an argument for belief in God, not as a decision theory paradox. As such, many objections to Pascal's Wager dispute specific properties of God or the possibility of infinite utility. Pascal's Mugging was proposed by [Bostrom, 2009] to strip back the metaphysical elements of Pascal's Wager, so that scholarship could be focused on its implications for decision theory.
+
+Old: A ``walk away'' option with certain chance of zero payoff
+New: A ``walk away'' option whose only outcome has zero utility
+
+Old: Agents who wish to act towards their utility function should thus be careful to avoid HULP-exploitation, and immunity to HULP-exploitation should be a desirable property of decision agents.
+New: Many agents are quite attached to their preferences, and would find the risk of someone arbitrarily altering them quite unacceptable. These agents should therefore avoid HULP exploitation, and immunity to HULP exploitation should be a desirable property of decision agents.
+
+pg. 13: removed Yudkowsky quote about Gandhi, replaced it with explanation about paperclips.
+
+pg. 16 old: Unfortunately, as we will see, dominance-based agents face a dilemma: they can either entirely disregard expected utility, which leaves them unable to solve many simple decision problems, or to supplement dominance reasoning with expected utility calculation, which reopens the door for HULP exploitation.
+pg. 16 new: Unfortunately, as we will see, dominance-based agents face a dilemma: they can either entirely disregard expected utility, which leaves them unable to solve many simple decision problems, or they can maximise expected utility when no action dominates, which reopens the door for HULP exploitation.
+
+pg. 19: Added "This means some agents with bounded utility functions are still HULP exploitable. Consider a human whose utility function is bounded by her finite lifespan. She assigns finite value to the St. Petersburg game, because after a certain number of coin flips she will die of old age. Her utility function is bounded by her finite lifespan, and therefore she escapes HULP exploitation. However, if the St. Petersburg game payoffs include advanced life extension treatments in addition to money, then the game becomes infinite valuable again, because she can live for longer and longer and therefore enjoy more and more utility."
+
+Defined Dutch Book: "[Hajek 2008] defines a Dutch Book as ``a set of bets bought or sold at such prices as to guarantee a net loss.'' If an agent's beliefs break the laws of probability theory, then someone could construct a Dutch Book which is guaranteed to lose that agent money, but which would still be considered a rational purchase by the agent. Vulnerability to a Dutch Book is often considered a sign of irrationality."
+
+Added: As stated previously, this paper deals with normative decision theory and rational agents with idealised decision theory. I do not concern myself with descriptive decision theory or real-world agents in this paper. However, in the rest of this chapter, I will assume these ideal decision theory agents are \textit{physically real} and exist \textit{within an environment}. To keep my analysis fully general, I will not make any claims about the nature of this environment \textemdash{} it could be our universe, some other physically-possible universe, a simulation, a toy environment, etc \textemdash{}.
+---
+I will also assume that ideal rationality requires neither omniscience nor 100\% error-free, reliable physical embodiment. Any agent with physical existence is subject to the laws of physics, which permit the sudden rearrangement of atoms in the agent's brain, or of the photons in the agent's visual field. Even an ideally rational artificial intelligence is subject to a miniscule chance of cosmic rays hitting their RAM and changing a 0 bit to a 1 bit. Even an ideally rational human being may be misled by a sudden rearrangement of photons through quantum tunnelling. These events are, of course, overwhelmingly unlikely \textemdash{} but they are \textit{possible}, and their possibility does not detract from the rationality of these ideal decision agents.
+
+Added: "Solomonoff Induction is a mathematical formalization of prediction. It uses a mathematical representation of Occam's Razor, where simpler explanations are preferred to complex ones, to judge which hypothesis is the simplest explanation of some observed data. As such, it assigns low probability to complex hypotheses. Although Solomonoff Induction is uncomputable computable approximations to it exist, such as Minimum Message Length."
+
+Added: One intuitive way to choose \(\epsilon\) is to choose whichever value of \(\epsilon\) will probably lead the decision-maker to the best outcome. This strategy has clear appeal \textemdash{} agents should generally do whatever leads them to the best outcome. Unfortunately, this means that to choose \(\epsilon\) you must evaluate the expected utility of the problem under a certain \(\epsilon\)-cutoff. This reintroduces the very problem that RNP is supposed to solve. The challenge, then, is to find a motivated way of choosing \(\epsilon\) without expected utility reasoning.
+
+Added: Note that this bound on \(\epsilon\) is motivated purely by epistemic and empirical concerns \textemdash{} \textit{not} by utility. Therefore it avoids the circularity of choosing \(\epsilon\) with reference to the stakes of the problem.
+
+
+
+Questions:
+
+pg. 4 Are outcomes f(s,a) -> a?
+pg. 5 "they're axioms aren't they" what do you mean by this?
+pg. 5 You told me to "say that beliefs need to obey probability axioms". I've changed a sentence to say "Firstly, agents who maximise their expected utility (and whose beliefs obey the laws of probability theory)". Is this what you meant?
+pg. 7 Your paragraph is cut off by the margin - could you please explain your point again?
+pg. 8 You've said my footnote about the utility of money and my pharmaceutical example is unhelpful. Could you please explain why?
+pg. 9 First sentence you asked if Aztecs believed in heaven. They did - do you think I should mention this, and if so, where?
+pg. 23 Is it worth keeping the finite deliberation section in?
+pg. 35 What do you mean about the agents still being HULP exploitable? HULP exploitation can only happen if there's an option with an arbitrarily high utility and fixed low probability. epsilons greater than zero truncate the St. Petersburg paradox to a finite expected utility. Some E>0 (not all, but some) will also make PW/PM finite expected utility.
