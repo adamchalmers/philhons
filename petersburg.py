@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys
 
 ERR = "Please enter a confidence, as a decimal number."
@@ -13,7 +14,7 @@ def petersburg(v):
 
 if __name__ == "__main__":
   if len(sys.argv) < 2 or "h" in sys.argv[1]:
-    print "Argument missing. %s" % ERR
+    print("Argument missing:", ERR)
   else:
     try:
       v = float(sys.argv[1])
