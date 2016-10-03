@@ -34,6 +34,8 @@ Added: Note that this bound on \(\epsilon\) is motivated purely by epistemic and
 
 Added: explanation of mind projection fallacy
 
+Added: explanation of why HULP is not like a lottery (footnote 14, page 14)
+
 Questions:
 
 pg. 4 Are outcomes f(s,a) -> a?
@@ -43,7 +45,6 @@ pg. 5 You told me to "say that beliefs need to obey probability axioms". I've ch
 pg. 7 Your paragraph is cut off by the margin - could you please explain your point again?
 pg. 8 You've said my footnote about the utility of money and my pharmaceutical example is unhelpful. Could you please explain why?
 pg. 9 First sentence you asked if Aztecs believed in heaven. They did - do you think I should mention this, and if so, where?
-pg. 23 Is it worth keeping the finite deliberation section in?
 pg. 35 What do you mean about the agents still being HULP exploitable? HULP exploitation can only happen if there's an option with an arbitrarily high utility and fixed low probability. epsilons greater than zero truncate the St. Petersburg paradox to a finite expected utility. Some E>0 (not all, but some) will also make PW/PM finite expected utility.
 pg. 36 I'm not sure if Pasadena counts as a HULP problem. I guess it (on some ordering) will have an arbitrarily high positive outcome, but it could also have an arbitrarily large negative outcome. Do you think my characterisation of HULP on pg. 8 is insufficient?
 I've cited your 2008 paper (pg. 38) as an example of "standard decision theory" and EUM being used interchangeably. Is that OK?
