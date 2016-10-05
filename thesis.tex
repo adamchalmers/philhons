@@ -14,7 +14,9 @@
 % \onehalfspacing
 \maketitle
 
-\section{What is decision theory and why is it broken?}
+\tableofcontents
+
+\newpage\section{What is decision theory and why is it broken?}
 
 Normative (or ideal) decision theory is the study of how to make the right choice in a given situation\footnote{The related study of \textit{descriptive} decision theory focuses on how people \textit{actually} make decisions, rather than how they \textit{ought} to. This paper is only concerned with ideal decision theory.}. Economists, politicians, scientists, financial planners and doctors all use decision theory to choose which possible action will best let them achieve their goals.
 
@@ -157,7 +159,7 @@ Before analysing HULP exploitation, I will note the existence of inverse-HULP pr
 
 I propose that ideal rational agents should treat LUHP problems symmetrically to HULP problems. An agent can be exploited equally well by offering them a chance at entering heaven or a chance at avoiding hell. If corresponding HULP and LUHP problems appear different, or generate different intuitions, I suspect it is merely a product of the asymmetric way human brains model reward and loss. Standard decision theory values profit-making and loss-avoidance equally (assuming any diminishing returns are already factored into the agent's utility function). As my work only deals with \textit{ideal, normative} decision theory, I will only address HULP problems in this paper. However, LUHP problems could be used equally well to exploit an expected utility maximiser.
 
-\section{Exploitation}
+\newpage\section{Exploitation}
 
 In the previous section, I provided an intuitive explanation of HULP exploitation. To summarise:
 
@@ -229,7 +231,7 @@ However, with a HULP problem, there is no upper limit to the amount of money an 
 
 How can an agent possibly avoid HULP exploitation, given that it seems to arise as a natural consequence of expected utility maximisation? I believe we can alter the norms of decision theory, keeping the benefits of expected utility maximisation where they can be safely applied, while also protecting agents from HULP exploitation.
 
-\section{Avoiding exploitation}
+\newpage\section{Avoiding exploitation}
 
 I have shown that agents who value HULP gambles at their expected utility are vulnerable to HULP exploitation, where their preferences can be arbitrarily reordered by a malicious agent. In this section I will consider the characteristics of agents who cannot be HULP exploited, and assess whether any of these agents are ``strictly better'' than standard expected utility maximisers. I will consider an agent's decision theory ``strictly better'' than expected utility maximisation if it endorses the same actions as expected utility maximisation for non-HULP problems, and avoids endorsing the HULP action for HULP problems.
 
@@ -313,7 +315,7 @@ Furthermore, RNP agents cannot be HULP exploited by offering them a reward in li
 
 It seems RNP offers a way for agents to avoid HULP exploitation without incurring the costs or theoretical constraints that adopting dominance theories or bounded utilities does. I will consider RNP to be a candidate solution to HULP exploitation, and in the next section, will continue my analysis of RNP.
 
-\section{RNP and principled choices of epsilon}
+\newpage\section{RNP and principled choices of epsilon}
 
 In previous chapters we have seen that HULP exploitation leaves standard decision theoretic agents vulnerable to having their preferences arbitrarily reordered. This would, of course, greatly interfere with the agent's goals and interests. Therefore, if a principle allows agents to avoid HULP exploitation without other adverse consequences, it should be adopted as a norm of rationality. I have proposed Dr. Smith's Rationally Negligible Probabilities as a hypothesis which meets these criteria better than competing theories, such as bounded utilities. In the previous chapter, I claimed that bounded utilities were arbitrary and unmotivated, however, similar charges could be levelled against RNP in two ways.
 
@@ -435,7 +437,7 @@ Intuition 2 says that decision theory should work well for all agents whose beli
 
 I have sketched my defense of RNP and explained how to choose a value of \(\epsilon\) which is neither arbitrary nor based on expected utility. In the next section, I will further detail how RNP solves the problem of HULP exploitation, answer questions readers may have and defend my work from some anticipated critiques. 
 
-\section{Discussion and anticipated objections}
+\newpage\section{Discussion and anticipated objections}
 
 In this section, I will respond to anticipated questions or concerns readers may have. 
 
@@ -443,7 +445,7 @@ In this section, I will respond to anticipated questions or concerns readers may
 
 Bearing in mind that \(p(CSH)\) is a tiny number, perhaps less than \(10^{-10}\), agents who follow my proposal and use RNP with \(\epsilon \geq p(CSH)\) will only truncate the St. Petersburg lottery after an extraordinary number of terms. Many would judge this value as still vastly higher than the genuine or rational value of the St. Petersburg game. It appears my proposal does not solve the problem of overvaluing the St. Petersburg game. 
 
-\subsubsection{Response}
+\subsubsection*{Response}
 
 Yes, under my theory the St. Petersburg game still has an absurdly high value. But my goal is not to resolve the overvaluation of the St. Petersburg game. My goal is to find a decision theory which cannot be HULP exploited. My proposed solution only requires that agents value the St. Petersburg game at some finite number, rather than an infinite or arbitrarily large value. Some values of \(\epsilon\) will result in an RNP-agent overvaluing the St. Petersburg game, but provided \(\epsilon>0\) the St. Petersburg game cannot be used to HULP exploit them. Agents who overvalue the gamble are violating rationality in a different way to agents who can be HULP exploited by the gamble. Each specific HULP problem might be overvalued in a different way, and I do not aim to address their specific problems. I only aim to characterise and resolve issues of HULP exploitation.
 
@@ -453,7 +455,7 @@ Readers may believe each HULP problem I've mentioned has its own problem-specifi
 
 After all, there are many standard arguments against Pascal's Wager: arguments against infinitely-valuable outcomes \citep{mcclennen1994pascal}, arguments for many gods \citep{saka2001pascal}, for the impossibility of god \citep{oppy1991rescher} and [TODO: reread and summarise] \citep{hajek2003waging}. The St. Petersburg paradox has been attacked using risk-aversion \citep{weirich1984st} or claiming an infinite series of coin-tosses is impossible \citep[pg. 154]{jeffrey1990logic}. Even the relatively obscure Pascal's Mugging has attracted problem-specific solutions \citep{baumann2009counting}. Perhaps there are no HULP problems, only problems which \textit{seem} HULP-like before they're ``solved'' with further philosophical analysis. If there are no actual HULP problems, then there is no need to burden our decision theory with the addition of RNP.
 
-\subsubsection{Response}
+\subsubsection*{Response}
 
 Yes, many HULP problems have their own specific ``solution'' which purports to explain why standard decision theory assigns finite value to the gamble. However, each solution is only satisfying as a \textit{specific solution} to \textit{one specific problem}. They do not aim to solve HULP exploitation generally. The Principle of Uniform Solution states ``it is natural to expect all the paradoxes of a single family to have a single kind of solution,'' \citep[pg. 32]{priest1994structure}. In section 1.3 I gave the necessary and sufficient conditions to classify a decision problem as HULP: having a walk away action (whose sole outcome has zero utility) and HULP action (which has at least one low-probability outcome with arbitrarily high utility). It would be strange and unsatisfying if these problems were all to have wildly different solutions. In section 4, I analysed several general solutions (bounded utilities, dominance-based decision theories and RNP), each of which was a uniform solution to all HULP problems. I champion RNP only because it is the best of these general solutions. 
 
@@ -465,7 +467,7 @@ Finally, no philosophical consensus exists regarding which, if any, of these pro
 
 The dead hypothesis theory appears to contradict a core Bayesian idea: that if an agent updates their belief according to Bayes' theorem, then as they increasingly observe data, their beliefs will become increasingly accurate. As \citep[pg. 56]{resnik1987choices} puts it, ``large amounts of data bearing on the truth of p can ``wash out'' poor initial probability estimates.'' For example, suppose ESP exists. Any agent for whom \(H_{ESP}\) is a dead hypothesis would never believe in ESP. No matter how much supporting evidence was presented to them, the agent would continue to believe they were hallucinating or being deceived. This contradicts the Bayesian idea that we should converge towards the truth if we apply Bayes' rule. Contradicting Bayesianism is a good reason to reject a line of statistical reasoning, and therefore my explanation of how to choose \(\epsilon\) does not stand.
 
-\subsubsection{Response}
+\subsubsection*{Response}
 
 Jaynes anticipates this confusion and explains why the dead hypothesis phenomena is actually a prediction of Bayesian statistics, if not Bayesianism. According to Jaynes, the idea ``whatever the new information D, it should tend to bring different people into closer agreement with each other'' is actually a confused misunderstanding of Bayesian statistics \citep[pg. 127]{jaynes2003probability}. This is because it fails to take agents' priors into account. 
 
@@ -484,7 +486,7 @@ This shows the idea quoted in Resnik is not a mathematical prediction of Bayesia
 \subsection{A lower bound on \(\epsilon\) means ignoring grave risks}
 Lower-bounding \(\epsilon\) means we can no longer reason decision-theoretically about a range of improbable events. Consider a new nuclear reactor design, and let \(X\) be the event of its catastrophic meltdown. If \(P(X) < \epsilon\) then, on my theory, we should ignore the risk of meltdown. This seems unwise \textemdash{} surely it's rational and prudent to consider the risk of meltdown.
 
-\subsubsection{Response}
+\subsubsection*{Response}
 
 Firstly, I believe that most plausible hypotheses are \textit{far} more probable than CSH, and therefore likely above \(\epsilon\) probability. CSH is an incredibly bold proposition. It is almost equivalent to asserting the existence of Descartes' malicious demon. Almost all risks we encounter in daily life will be far above \(p(CSH)\). 
 
@@ -496,11 +498,11 @@ Imagine several agents who agree on a decision theory and problem specification 
 
 In \citep[pg. 476]{smith2014evaluative} Smith explicitly denies the idea of a universal \(\epsilon\) cutoff, writing that there cannot be ``some probability threshold such that no-one need ever \textemdash{} in any decision problem \textemdash{} consider outcomes \textemdash{} of any lottery \textemdash{} whose probability lies below this threshold.'' Has my proposal done exactly this?
 
-\subsubsection{Response}
+\subsubsection*{Response}
 
 I agree that a universal cutoff would be undesirable, but my account of \(\epsilon\) is not a universal cutoff. I define \(\epsilon = p(CSH)\), which will depend on both the agent and their environment. Some agents will be more likely to undergo this complete cognitive failure. Some environments will be more reliable and less likely to completely mislead an agent or damage their cognitive capacity. I believe pinning \(\epsilon\) to an agent's prior for CSH aligns with Smith's idea that ``for another decision problem and/or another lottery and/or another decision maker, it might be a different \(\epsilon\)'' \citep[pg. 472]{smith2014evaluative}.
 
-\section{Evaluation}
+\newpage\section{Evaluation}
 This paper makes four contributions to decision theory:
 
 \begin{enumerate}
