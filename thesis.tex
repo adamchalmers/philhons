@@ -35,10 +35,10 @@ This is a grave problem for decision theory because exploitation is simple to pe
 This paper makes four novel contributions to decision theory:
 
 \begin{enumerate}
-\item It examines connections between several distinct decision theory paradoxes, and showing that they're all specific examples of a more general class of problems I call HULP (High Utility, Low Probability)
-\item It demonstrates how HULP problems can be used to exploit standard decision theoretic agents by allowing the exploiter to arbitrarily reorder the victim's preferences (I call this HULP exploitation)
-\item It critically evaluates several ways agents can protect themselves from HULP exploitation, including one candidate solution (Rationally Negligible Probabilities)
-\item It analyses Rationally Negligible Probabilities which combines it with epistemology and statistics to answer some questions about how it is to be applied
+\item It examines connections between several distinct decision theory paradoxes, and showing that they're all specific examples of a more general class of problems I call HULP (High Utility, Low Probability).
+\item It demonstrates how HULP problems can be used to exploit standard decision theoretic agents by allowing the exploiter to arbitrarily reorder the victim's preferences (I call this HULP exploitation).
+\item It critically evaluates several ways agents can protect themselves from HULP exploitation, including one candidate solution (Rationally Negligible Probabilities).
+\item It analyses Rationally Negligible Probabilities which combines it with epistemology and statistics to answer some questions about how it is to be applied.
 \end{enumerate}
 
 \subsection{Expected utility}
@@ -64,7 +64,7 @@ Secondly, \citet{von1944games} show that any agent who meets four simple, uncont
 
 Thirdly, expected utility has been very successful in the real world. It seems to correctly guide people in a wide range of probabilistic activities \textemdash{} gambling, medical interventions, business decisions, etc. Its wide success in a number of fields and disciplines presents empirical evidence for its usefulness.
 
-For these three reasons, expected utility is a well-regarded norm of decision theory \textemdash{} to the point where ``expected utility maximisation'' is sometimes used interchangeably with ``standard decision theory'' (e.g. in \citet[pg. 38]{colyvan2008relative}). However, scholars have devised many decision problems where expected utility seems to dramatically overvalue certain actions and endorse seemingly irrational choices. I believe this overvaluing is a serious problem for expected utility maximisers, because it leads agents to pay irrationally large amounts for certain games. This means that, despite expected utility maximisation's practical and theoretical attractiveness, it is not a complete theory of rational choice. As I will soon explain, this is because expected utility maximisers can be exploited by offering them an overvalued gamble. Later in this paper, I will discuss ways to modify expected utility maximisation to avoid this exploitation. For now, I will analyse these paradoxical gambles and draw out how they are used for exploitation.
+For these three reasons, expected utility is a well-regarded norm of decision theory \textemdash{} to the point where ``expected utility maximisation'' is sometimes used interchangeably with ``standard decision theory'' (e.g. in \citet[pg. 38]{colyvan2008relative}). However, scholars have devised many decision problems where expected utility seems to dramatically overvalue certain actions and endorse seemingly irrational choices. I believe this overvaluing is a serious problem for expected utility maximisers, because it leads agents to pay irrationally large amounts for certain games. This means that, despite expected utility maximisation's practical and theoretical attractiveness, it is not a complete theory of rational choice. As I will soon explain, this is because expected utility maximisers can be exploited by offering them an overvalued gamble. Later in this paper, I will discuss ways to modify expected utility maximisation to avoid this exploitation. For now, I will analyse these paradoxical gambles and draw out how they can be used for exploitation.
 
 \subsection {Decision theory paradoxes}
 
@@ -151,18 +151,18 @@ Note that Eliza could have performed a Pascal's Mugging just as easily by promis
 
 These concerns demonstrate why expected utility maximisation is inadequate as a norm of decision theory. Any expected utility maximising agent can have their agency hijacked by an exploiter who is able to offer them HULP problems, and as we have seen, such problems are trivial and cheap to offer. In the next chapter I will formalise my notion of HULP problems and go over the mathematics behind HULP exploitation.
 
-\subsection{Low Utility, High Probability}
+\subsection{Negative HULP problems}
 
-Before analysing HULP exploitation, I will note the existence of inverse-HULP problems: Low Utility, High Probability (LUHP) problems. Each HULP problem has a corresponding LUHP problem which can be constructed by multiplying the utility payoffs in the HULP decision table by -1. This yields decision problems where, for example, God sends you to hell \(U=-\infty\) if you do not worship him, or a mugger threatens to ruin your life to the degree of some large negative utility (perhaps by committing mass genocide). 
+Before analysing HULP exploitation, I will note the existence of inverse-HULP problems: High Negative Utility, Low Probability (HNULP) problems. Each HULP problem has a corresponding HNULP problem which can be constructed by multiplying the utility payoffs in the HULP decision table by -1. This yields decision problems where, for example, God sends you to hell \(U=-\infty\) if you do not worship him, or a mugger threatens to ruin your life to the degree of some large negative utility (perhaps by committing mass genocide). 
 
-I propose that ideal rational agents should treat LUHP problems symmetrically to HULP problems. An agent can be exploited equally well by offering them a chance at entering heaven or a chance at avoiding hell. If corresponding HULP and LUHP problems appear different, or generate different intuitions, I suspect it is merely a product of the asymmetric way human brains model reward and loss. Standard decision theory values profit-making and loss-avoidance equally (assuming any diminishing returns are already factored into the agent's utility function). As my work only deals with \textit{ideal, normative} decision theory, I will only address HULP problems in this paper. However, LUHP problems could be used equally well to exploit an expected utility maximiser.
+I propose that ideal rational agents should treat HNULP problems symmetrically to HULP problems. An agent can be exploited equally well by offering them a chance at entering heaven or a chance at avoiding hell. If corresponding HULP and HNULP problems appear different, or generate different intuitions, I suspect it is merely a product of the asymmetric way human brains model reward and loss. Standard decision theory values profit-making and loss-avoidance equally (assuming any diminishing returns are already factored into the agent's utility function). As my work only deals with \textit{ideal, normative} decision theory, I will only address HULP problems in this paper. However, HNULP problems could be used equally well to exploit an expected utility maximiser.
 
 \newpage\section{Exploitation}
 
 In the previous section, I provided an intuitive explanation of HULP exploitation. To summarise:
 
 \begin{itemize}
-\item The victim has some available action A which is undesirable because of its low (perhaps negative) expected utility
+\item The victim has some available action A which is undesirable because of its low (perhaps negative) expected utility.
 \item The exploiter agent offers the victim an infinite or arbitrarily large reward just in case the victim performs A. 
 \item The victim now evaluates that performing A has infinite (or arbitrarily large) utility, and performs A.
 \end{itemize}
@@ -181,7 +181,7 @@ The following section formalises how an exploiter can compel or prevent any acti
 
 \subsubsection{Formalising exploitation}
 
-Suppose the victim has some action \(A\) available to them, which is certain to cause the undesirable outcome \(O\) where \(u(O) < 0\). The victim will prefer not to act upon this action\footnote{For readers unfamiliar with decision theory: \(u\) is the utility function. An outcome \(O\) has utility \(u(O)\).}.
+Suppose the victim has some action \(A\) available to them, which is certain to cause the undesirable outcome \(O\) where \(u(O) < 0\). The victim will prefer not to act upon this action.\footnote{\(u\) is the utility function. An outcome \(O\) has utility \(u(O)\).}
 
 The exploiter then offers the victim a desirable reward \(R\) where \(u(R) > 0\) if the victim performs \(A\). The victim estimates the probability that the exploiter's offer is honest, \(p(H)\), and calculates the new expected utility of performing A:
 
@@ -200,7 +200,7 @@ Rearranging this yields
 \noindent
 Therefore, if the exploiter offers a sufficiently high reward, they can turn the initially unattractive action \(A\) into a desirable one. Crucially, this requires no cost or commitment from the exploiter. The exploiter merely has to put the offer to the victim in order to flip their preference regarding \(A\).
 
-More generally, suppose the victim has two possible actions \(A\) and \(B\) which result in outcomes \(X\) and \(Y\), and prefers \(X\) to \(Y\) such that \(u(X)>u(Y)\). As it stands, the agent will prefer A to B. If an exploiter offers a reward \(R\) for performing \(A\), then provided
+More generally, suppose the victim has two possible actions \(A\) and \(B\) which result in outcomes \(X\) and \(Y\), and prefers \(X\) to \(Y\) such that \(u(X)>u(Y)\). As it stands, the agent will prefer A to B. If an exploiter offers a reward \(R\) for performing \(B\), then provided
 
 \[u(R) > \frac{u(A)-u(B)}{p(H)}\]
 
@@ -219,7 +219,7 @@ Note that this is a purely pragmatic, prudential argument, \textit{not} a moral 
 
 These arguments may be true of purely goal-focused agents (such as some forms of artificial intelligence). But other decisionmakers might not be so intensely attached to their utility function. Even the most rational humans often find preference change to be desirable and meaningful. For example, few people enjoy the taste of wine when they first try it, but many consider developing such a taste to be desirable and good. Many nicotine addicts wish to remove their preference for nicotine, and spend considerable resources trying to do so. If some powerful agent could reach into their mind and alter their nicotine preference, they wouldn't resent it: they'd be very thankful.
 
-However, these examples do not show that preference changes are unconcerning. While many people wish to develop a preference for wine or remove a preference for nicotine, few people in their right mind wish to develop a preference for eating faeces or mistreating their children. Many types of agents identify with their preferences. Humans define themselves by their values, but even AIs such as, say, self-driving car programs exist to satisfy their utility function (i.e. to safely drive cars). Often, an agent's preferences are inextricably bound up with the very identity of that agent. HULP exploitation can compell an agent to abandon any principle no matter how cherished, or take up any cause no matter how vile. 
+However, these examples do not show that preference changes are unconcerning. While many people wish to develop a preference for wine or remove a preference for nicotine, few people in their right mind wish to develop a preference for eating faeces or mistreating their children. Many types of agents identify with their preferences. Humans define themselves by their values, but even AIs such as, say, self-driving car programs exist to satisfy their utility function (i.e. to safely drive cars). Often, an agent's preferences are inextricably bound up with the very identity of that agent. HULP exploitation can compel an agent to abandon any principle no matter how cherished, or take up any cause no matter how vile. 
 
 Again: decision theory exists to help agents achieve their goals. Adopting a decision theory should not cause an agent's goals to arbitrarily change whenever a sham priest or shady gambler offers them a far-fetched deal. When agents are HULP exploited, their exploiter can force the agent to completely restructure their preferences. The notion of agency intrinsically includes acting towards one's goals or preferences. If a decision theory allows the subversion of one's agency, then agents should not adopt that decision theory. Thus, the fact that expected utility maximisation opens an agent up to HULP exploitation is a fundamental flaw in expected utility maximisation.
 
@@ -227,7 +227,7 @@ Again: decision theory exists to help agents achieve their goals. Adopting a dec
 
 Some may object that HULP problems resemble insurance plans. For example, how does Max paying Eliza for a small chance at a large reward differ from Max paying an insurance company for a small chance of insurance settlement? The key difference is that there is a fixed rational price to pay for a given insurance policy, but no fixed price which is rational to pay in a HULP problem.
 
-When buying insurance against a particular event, the event can only be finitely costly. Even a terrible event like the Fukushima tsunami and subsequent nuclear disaster has a fixed (although exceptionally high) cost. Insurance events like earthquakes or robberies have a corresponding probability distribution over possible outcomes, but this distribution is finite. No matter how bad an earthquake can be, it cannot have a literally infinite damage. Therefore, given the probability of disaster occuring and a finite probability distribution over possible damages, you can calculate a fixed maximum price you should pay for a given insurance policy (ignoring the effects of risk- and loss-aversion, hyperbolic discounting, the value of reassurance, certainty, and all the other reasons humans buy insurance policies). 
+When buying insurance against a particular event, the event can only be finitely costly. Even major natural disasters have fixed (although exceptionally high) costs. Insurance events like earthquakes or robberies have a corresponding probability distribution over possible outcomes, but this distribution is finite. No matter how bad an earthquake can be, it cannot have a literally infinite damage. Therefore, given the probability of disaster occuring and a finite probability distribution over possible damages, you can calculate a fixed maximum price you should pay for a given insurance policy (ignoring the effects of risk- and loss-aversion, hyperbolic discounting, the value of reassurance, certainty, and all the other reasons humans buy insurance policies). 
 
 However, with a HULP problem, there is no upper limit to the amount of money an expected utility maximiser would pay to take the HULP action, whether that is buying a St. Petersburg ticket, donating to Church, paying a mugger, etc. No matter what price you are prepared to offer, the infinite expected utility of the outcome means the agent should be willing to pay more. Insurance policies therefore lack the coercive element of HULP exploitation. [TODO: readers, I think this is a weak section and needs revision. Thoughts?]
 
@@ -245,7 +245,7 @@ Despite this, alternative decision theories which do not \textit{wholly} advocat
 
 Decision theorists largely agree that the Altadena game is more desirable than the Pasadena game, but expected utility theory cannot account for this intuition because both games have undefined expected utility. However, because each outcome of the Altadena game is higher than the corresponding outcome of the Pasadena game, it \textit{dominates} the Pasadena game\footnote{\citet[pg. 9]{resnik1987choices} defines dominance as follows: ``an act A dominates antoher act B if, in a state-by-state comparison, A yields outcomes that are at least as good as those yielded by B and in some states they are even better. The dominance principle tells us to rule out dominated acts.''}. This demonstrates that sometimes the dominance principle offers advice where expected utility can't. This has motivated the construction of decision theories which combine dominance and expected utility \citep{easwaran2009dominance, colyvan2008relative, colyvan2006no}.
 
-One might hope that further integrating dominance reasoning into decision theory could allow agents to avoid HULP exploitation. After all, neither HULP nor walk-away action dominates the other. Perhaps if agents take dominance more seriously than expected utility, they won't be compelled to take the HULP action. Unfortunately, as we will see, dominance-based agents face a dilemma: they can either entirely disregard expected utility, which leaves them unable to solve many simple decision problems, or to supplement dominance reasoning with expected utility calculation, which reopens the door for HULP exploitation.
+One might hope that further integrating dominance reasoning into decision theory could allow agents to avoid HULP exploitation. After all, neither HULP nor walk-away action dominates the other. Perhaps if agents take dominance more seriously than expected utility, they won't be compeled to take the HULP action. Unfortunately, as we will see, dominance-based agents face a dilemma: they can either entirely disregard expected utility, which leaves them unable to solve many simple decision problems, or to supplement dominance reasoning with expected utility calculation, which reopens the door for HULP exploitation.
 
 This is demonstrated by considering the ways in which dominance and expected utility reasoning can be combined. Firstly, note that each principle falls silent in different problems. I have already discussed a scenario where expected utility falls silent but dominance reasoning offers advice (choosing between Pasadena and Altadena gambles). However, dominance reasoning falls silent on the many decision problems which have no dominating action. For example, consider this simple problem:
 
@@ -512,10 +512,10 @@ I agree that a universal cutoff would be undesirable, but my account of \(\epsil
 This paper makes four contributions to decision theory:
 
 \begin{enumerate}
-\item Identifying the HULP class of decision problems and showing Pascal's Wager, the St. Petersburg Paradox and Pascal's Mugging are all HULP problems
-\item Showing that malicious agents can arbitrarily reorder the preferences of an expected utility maximiser by presenting them with HULP decision problems (a process I call HULP exploitation)
-\item Analysing solutions to HULP, both successful (Rationally Negligible Probabilities) and unsuccessful (dominance-based decision theory, bounded utility functions)
-\item Exploring RNP: finding justified values of \(\epsilon\) without recourse to expected utility; analysing what this can tell us about the limits of decision theory
+\item Identifying the HULP class of decision problems and showing Pascal's Wager, the St. Petersburg Paradox and Pascal's Mugging are all HULP problems.
+\item Showing that malicious agents can arbitrarily reorder the preferences of an expected utility maximiser by presenting them with HULP decision problems (a process I call HULP exploitation).
+\item Analysing solutions to HULP, both successful (Rationally Negligible Probabilities) and unsuccessful (dominance-based decision theory, bounded utility functions).
+\item Exploring RNP: finding justified values of \(\epsilon\) without recourse to expected utility; analysing what this can tell us about the limits of decision theory.
 \end{enumerate}
 
 I believe the first and second contribution are the most valuable. Readers may disagree with my account of the choice of \(\epsilon\), they may dislike RNP, or they may propose their own solutions to HULP exploitation. However, I feel the value of HULP and HULP exploitation themselves stand on their own as serious decision theory problems worthy of further research. Readers might not think that RNP is the solution to HULP problems, but I hope most of them will agree that HULP is a genuine problem crying out for a genuine and uniform solution.
