@@ -14,7 +14,23 @@
 % \onehalfspacing
 \maketitle
 
-A thesis submitted in partial fulfilment of hte requirements for the degree of Bachelor of Arts (Honors) in Philosophy, University of Sydney, October 2016.
+\noindent
+A thesis submitted in partial fulfilment of the requirements for the degree of Bachelor of Arts (Honors) in Philosophy, University of Sydney, October 2016.
+
+\section*{Abstract}
+
+Decision theory aims to provide mathematical analysis of which choice one should rationally make in a given situation. Our current decision theory norms have been very successful, however, several problems (such as Pascal's Wager, the St. Petersburg Paradox, and Pascal's Mugging) have proven vexing for standard decision theory. In this paper, I show that these problems all share a similar structure and identify a class of problems which decision theory overvalues. I demonstrate that agents who follow current standard decision theory can be \textit{exploited} and have their preferences reordered if offered decision problems of this class. I show that preference reordering is a serious problem, which motivates the search for a decision theory which is immune to exploitation. I find Dr. Nick Smith's theory of Rationally Negligible Probabilities cannot be exploited in this way and discuss why agents should adopt it.
+
+\newpage
+\section*{Acknowledgements}
+
+This thesis was written on land which belongs to the Gadigal people of the Eora Nation. Their sovereignty was never ceded, so this land always was and always will be Aboriginal land. 
+
+My work on decision theory would not be possible without the help of my supervisor, Dr. Mark Colyvan. Thank you for being my tour guide through the wild world of decision theory, for listening patiently while I explored implausible theories, and for your impeccable notes on my work. I have enjoyed your company immensely throughout this year. Thank you for all your help.
+
+To my wonderful parents: thank you for your constant support through honours, but every part of my education. I wouldn't be capable of writing a thesis like this were it not for the lessons and principles that I have learned from you.
+
+A huge thank you to everyone who read and gave notes on early copies of this thesis: Eleanor Gordon-Smith, Jacob Henegan, Isabel Rae Timmerman, and Daniel Kenny, thank you so much for pouring through sixty pages of an unfamiliar field just to help your friend. To my study crew of Tahlia Chloe, Oliver Moore, Holly McMath and Gerard Inland: your company in Fisher, Schaeffer, the postgrad dungeons or the Eastern Suburbs kept me from collapsing into a quivering mess. You kept me in good spirits during the most difficult project I've ever completed and I know with absolute certainty that I could not have completed this without you. This applies twice as much to my late-night Fisher companions Tess Lyon and Emma Balfour: to misquote J.K. Rowling, ``there are some things you can't share without ending up liking each other, and knocking out a twelve-thousand word thesis is one of them.''
 
 \newpage\tableofcontents
 
@@ -205,7 +221,7 @@ More generally, suppose the victim has two possible actions \(A\) and \(B\) whic
 \[u(R) > \frac{u(A)-u(B)}{p(H)}\]
 
 \noindent
-the agent will now prefer choosing \(B\) to \(A\), having had their initial preferences reversed by the exploiter. Note that this process is fully general \textemdash{} any number of preferences can be reordered like this. Note also that an agent's strength of preference for an outcome (measured by its utility) is only defined in relation to their prefernce for other outcomes \citep{von1944games}. This means the ability to reorder any two preferences is equivalent to the ability to redefine an agent's utility function. An exploiter can simply swap the victim's preferences until the victim ranks outcomes from best to worst in exactly the way the exploiter would like.
+the agent will now prefer choosing \(B\) to \(A\), having had their initial preferences reversed by the exploiter. Note that this process is fully general \textemdash{} any number of preferences can be reordered like this. Note also that an agent's strength of preference for an outcome (measured by its utility) is only defined in relation to their prefernce for other outcomes \citep{von1944games}. Wanting or not-wanting an outcome is just a matter or preferring it to one's current situation. This means the ability to reorder any two preferences is equivalent to the ability to redefine an agent's utility function. An exploiter can simply swap the victim's preferences until the victim ranks outcomes from best to worst in exactly the way the exploiter would like.
 
 \subsection{Should agents avoid having their desires changed?}
 
@@ -213,7 +229,7 @@ We have seen that HULP exploitable agents can have their preferences reordered b
 
 In computer science and artificial intelligence, agents are often thought to value stability of preference. \citet{omohundro2008basic,bostrom2012will} argue that powerful agents will generally go to great depths to preserve their utility function \(U\) (i.e. their preferences), because allowing it to be modified to some other \(U'\) would be unlikely to achieve progress towards the original \(U\). Omohundro argues that for artificial intelligences ``any changes to [their utility functions] would be disastrous to them. If a malicious external agent were able to make modifications, their future selves would forevermore act in ways contrary to their current values.''
 
-As a simple example, imagine an agent who only values animal welfare.\footnote{This example would work just as well if she valued animal welfare primarily, but not exclusively. However, for simplicity and ease of explanation I have used this simpler example.} The utility she assigns to a state of the world is just the sum of each animal's welfare, and therefore her actions are chosen in order to minimise the world's animal suffering. This agent would greatly resent anyone modifying her utility function \(U\) to \(U'\), because if she valued animal welfare less in the future, then she will likely contribute to less animal welfare than if \(U\) had been left unchanged. Thus, her intrinsic preference for animal welfare gives rise to an instrumental preference for preserving her utility function.\footnote{Of course, she may agree to change her utility function if the change secures a commitment from some other powerful agent to produce lots of animal welfare, take lots of animal-welfare-increasing actions, etc.}
+As a simple example, imagine an agent who only values animal welfare.\footnote{This example would work just as well if she valued animal welfare primarily, but not exclusively. However, for simplicity and ease of explanation I have used this simpler example.} The utility she assigns to a state of the world is just the sum of each animal's welfare, and therefore her actions are chosen in order to minimise the world's animal suffering. This agent would greatly resent anyone modifying her utility function \(U\) to \(U'\), because if she valued animal welfare less in the future, then she will likely contribute to less animal welfare than if \(U\) had been left unchanged. Thus, her intrinsic preference for animal welfare gives rise to an instrumental preference for preserving her utility function.\footnote{Of course, she may agree to change her utility function if the change secures a commitment from some other powerful agent to produce lots of animal welfare, take lots of animal-welfare-increasing actions, etc.} This is why she would greatly wish to avoid HULP exploitation. Reordering her preferences (for example, swapping the utilities she assigns to the current state of the world, and the state of the world where one less animal is in pain) would be unacceptable to her.
 
 Note that this is a purely pragmatic, prudential argument, \textit{not} a moral or ethical one. An agent whose singular value is the creation of paperclips will have just as strong a desire to protect his utility function as the animal welfare activist. Both will resent having their current utility function changed because it sets back the goals valued by that very utility function.
 
