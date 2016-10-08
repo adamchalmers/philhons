@@ -1,5 +1,5 @@
 \contentsline {section}{\numberline {1}What is decision theory and why is it broken?}{5}
-\contentsline {subsection}{\numberline {1.1}Expected utility}{8}
+\contentsline {subsection}{\numberline {1.1}Expected utility}{7}
 \contentsline {subsection}{\numberline {1.2}Decision theory paradoxes}{11}
 \contentsline {subsubsection}{\numberline {1.2.1}St. Petersburg Paradox}{11}
 \contentsline {subsubsection}{\numberline {1.2.2}Pascal's Wager}{12}
@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {5}Discussion and anticipated objections}{51}
 \contentsline {subsection}{\numberline {5.1}Overvaluing St. Petersburg}{51}
 \contentsline {subsection}{\numberline {5.2}HULP is an empty set}{52}
-\contentsline {subsection}{\numberline {5.3}Dead hypotheses contradict Bayesianism}{54}
-\contentsline {subsection}{\numberline {5.4}Lower-bounded \(\epsilon \) ignores grave risks}{56}
-\contentsline {subsection}{\numberline {5.5}RNP disallows strict \(\epsilon \) values}{57}
+\contentsline {subsection}{\numberline {5.3}Dead hypotheses contradict Bayesianism}{53}
+\contentsline {subsection}{\numberline {5.4}Lower-bounded \(\epsilon \) ignores grave risks}{55}
+\contentsline {subsection}{\numberline {5.5}RNP disallows strict \(\epsilon \) values}{56}
 \contentsline {section}{\numberline {6}Evaluation}{58}
