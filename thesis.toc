@@ -12,21 +12,20 @@
 \contentsline {subsection}{\numberline {2.1}How does exploitation work?}{20}
 \contentsline {subsubsection}{\numberline {2.1.1}Formalising exploitation}{20}
 \contentsline {subsection}{\numberline {2.2}Should agents avoid having their desires changed?}{22}
-\contentsline {subsection}{\numberline {2.3}Objections to HULP exploitation}{24}
-\contentsline {section}{\numberline {3}Avoiding exploitation}{26}
-\contentsline {subsection}{\numberline {3.1}Agents who don't maximise expected utility}{26}
-\contentsline {subsection}{\numberline {3.2}Agents with bounded utility functions}{29}
-\contentsline {subsection}{\numberline {3.3}Agents with low-probability cutoffs}{31}
-\contentsline {section}{\numberline {4}RNP and principled choices of epsilon}{36}
-\contentsline {subsection}{\numberline {4.1}Ideal and real agents}{38}
-\contentsline {subsection}{\numberline {4.2}Presuppositions of decision theory}{39}
-\contentsline {subsection}{\numberline {4.3}CSH as a lower bound on decision theory}{43}
-\contentsline {subsection}{\numberline {4.4}Skepticism and dead hypotheses}{44}
-\contentsline {subsection}{\numberline {4.5}Objections, microscopes and black holes}{47}
-\contentsline {section}{\numberline {5}Discussion and anticipated objections}{51}
-\contentsline {subsection}{\numberline {5.1}Overvaluing St. Petersburg}{51}
-\contentsline {subsection}{\numberline {5.2}HULP is an empty set}{52}
-\contentsline {subsection}{\numberline {5.3}Dead hypotheses contradict Bayesianism}{53}
-\contentsline {subsection}{\numberline {5.4}Lower-bounded \(\epsilon \) ignores grave risks}{55}
-\contentsline {subsection}{\numberline {5.5}RNP disallows strict \(\epsilon \) values}{56}
-\contentsline {section}{\numberline {6}Evaluation}{58}
+\contentsline {section}{\numberline {3}Avoiding exploitation}{25}
+\contentsline {subsection}{\numberline {3.1}Agents who don't maximise expected utility}{25}
+\contentsline {subsection}{\numberline {3.2}Agents with bounded utility functions}{28}
+\contentsline {subsection}{\numberline {3.3}Agents with low-probability cutoffs}{30}
+\contentsline {section}{\numberline {4}RNP and principled choices of epsilon}{35}
+\contentsline {subsection}{\numberline {4.1}Ideal and real agents}{37}
+\contentsline {subsection}{\numberline {4.2}Presuppositions of decision theory}{38}
+\contentsline {subsection}{\numberline {4.3}CSH as a lower bound on decision theory}{42}
+\contentsline {subsection}{\numberline {4.4}Skepticism and dead hypotheses}{43}
+\contentsline {subsection}{\numberline {4.5}Objections, microscopes and black holes}{46}
+\contentsline {section}{\numberline {5}Discussion and anticipated objections}{50}
+\contentsline {subsection}{\numberline {5.1}Overvaluing St. Petersburg}{50}
+\contentsline {subsection}{\numberline {5.2}HULP is an empty set}{51}
+\contentsline {subsection}{\numberline {5.3}Dead hypotheses contradict Bayesianism}{52}
+\contentsline {subsection}{\numberline {5.4}Lower-bounded \(\epsilon \) ignores grave risks}{54}
+\contentsline {subsection}{\numberline {5.5}RNP disallows strict \(\epsilon \) values}{55}
+\contentsline {section}{\numberline {6}Evaluation}{57}
