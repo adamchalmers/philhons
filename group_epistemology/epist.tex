@@ -22,7 +22,7 @@ Although group and individual epistemology share the goals and concerns, group e
 
 One intuitive solution to the group credence problem is known as \textit{unweighted linear averaging}. In this scheme, groups should just average every individual's credence in a proposition to get the overall group credence. Unfortunately this approach yields poor results in a number of cases, which I shall examine below. A variety of more complicated procedures have been proposed which aim to succeed where unweighted linear averaging (or other approaches) fail. In this paper, I will examine a recently-published theory, \citet{dietrich2013probabilistic}'s \textit{Probabilistic Opinion Pooling} (hereafter POP) and evaluate its success as a solution to the group credence problem.
 
-\section{Troublesome scenarios for group credences}
+\section{Evaluating group credence procedures}
 
 To demonstrate the complications inherent in group credence functions, I will examine scenarios where the unweighted linear averaging rule yields poor outcomes. Later in this paper I will use these same scenarios to evaluate how successful POP is as a group credence procedure.
 
@@ -37,9 +37,22 @@ In order to outline unweighted linear averaging I must first define some termino
 	\item \textbf{Anonymity}: if \(CR'\) is a permutation of \(CR\), \(cr_G(P, CR) = cr_G(P, CR')\) (i.e. the identity of each individual doesn't matter, only their credence).
 	\item \textbf{Systematicity}: the credence of a specific proposition \(P\) is a pure function of each individual's credence in P, and nothing else \textemdash{} neither credences for other propositions, nor outside information beyond credences will affect the output of \(CR\).
 	\item \textbf{Unanimity}: if each individual in the group has the same credence for P, then the group should have that credence too.
-	\item \textbf{Independence preservation}: if all individuals have independent credences for propositions P and Q, then the group credence function for P and Q should also be independent. 
 	\item \textbf{Continuity}: small changes in the input individual credences should lead to small changes in the output group credence, i.e. \(cr_G(-,CR)\) should be a continuous function.
 \end{itemize}
+
+Unweighted linear averaging has \textbf{anonymity} because it treats every individual in the group the exact same way. Anonymity is motivated by considerations of fairness \textemdash{} a group should use information from all its members equally, and not privilege one member above others. There shouldn't be a small minority responsible for the group's decisions, and there certainly shouldn't be a \textit{dictator} individual whose credences determine the entire group's.
+
+The procedure meets \textbf{systematicity} because it calculates the group credence for a proposition using only the individual credences for that proposition (averaging them). Systematicity is desirable because otherwise group members could manipulate the group's decision by introducing other propositions or outside information (sometimes called `irrelevant alternatives')
+
+\textbf{Unanimity} is a natural consequence of using averaging: if all the numbers being averaged are equal, then the average will be that value too. Unanimity has an intuitive appeal \textemdash{} if every member in the group agrees, then there's no dispute to even resolve, and thus no need to consult a group credence function. Unweighted linear averaging's \textbf{continuity} comes from the linearity of averaging generally: if you slightly change one of the numbers being averaged, you'll only change the average a slight amount. This has some intuitive appeal but is less motivated than other properties.
+
+Unfortunately, unweighted linear averaging fails to meet several other important criteria of a good credence aggregation function. Firstly, it fails to \textit{commute with conditionalisation}. As \citet[pg. 1290]{russell2015groupthink} puts it, ``if every individual updates on new information by conditionalizing, the resulting average credence won’t be the same as what they would get from first averaging their unconditional credences in each proposition, and then conditionalizing on the new evidence.'' Unweighted linear averaging doesn't respect conditionalisation \citep[pg. 87]{loewer1985destroying}, which has serious consequences.
+
+If each individual conditionalises on evidence, and then the group credence is recalculated, the group's final credence function won't be the same as its old credence conditionalised. This means the group can now be tricked into buying a Dutch Book \textemdash{} ``a set of bets bought or sold at such prices as to guarantee a net loss'' \citep{hajek2008dutch}. Generally, an agent is considered irrational if they would ever possibly buy a bet which is guaranteed to lose them more money than they paid for it. Therefore, any group whose credences do not commute with conditionalisation opens themselves up to irrational behaviour \textemdash{} certainly not a desirable property of a credence function.
+
+Unweighted linear averaging also fails at what I call the \textbf{Elephant Problem}. 
+
+
 
 
 \bibliographystyle{apa-good}
