@@ -20,7 +20,26 @@ It often makes sense to ask what a group believes. For example, does a board of 
 
 Although group and individual epistemology share the goals and concerns, group epistemology involves several problems which individual epistemology does not face. For example, how do we aggregate the beliefs of many individuals into one group belief? How many individuals in a group are required to possess some piece of evidence before we can safely say the group as a whole possesses it? How do we resolve contradictions between the beliefs of different group members? These issues simply don't present themselves when considering the beliefs, knowledge and reasoning of individuals. This paper aims examines the specific question of \textit{group credence}: how do we determine the credence\footnote{In this paper I will use `belief' to designate a binary propositional attitude (agents do or don't believe a certain proposition) and credences as probability assignments (an agent may assign probability 0.3 to a proposition being true).} a group has in a given proposition?
 
-One intuitive solution to the group credence problem is known as \textit{unweighted linear pooling}. In this scheme, groups should just average every individual's credence in a proposition to get the overall group credence. Unfortunately this approach yields poor results in a number of cases, which I shall examine below. A variety of more complicated procedures have been proposed which aim to succeed where unweighted linear pooling (or other approaches) fail. In this paper, I will examine a recently-published theory, \citet{dietrich2013probabilistic}'s \textit{Probabilistic Opinion Pooling} (hereafter POP) and evaluate its success as a solution to the group credence problem.  
+One intuitive solution to the group credence problem is known as \textit{unweighted linear averaging}. In this scheme, groups should just average every individual's credence in a proposition to get the overall group credence. Unfortunately this approach yields poor results in a number of cases, which I shall examine below. A variety of more complicated procedures have been proposed which aim to succeed where unweighted linear averaging (or other approaches) fail. In this paper, I will examine a recently-published theory, \citet{dietrich2013probabilistic}'s \textit{Probabilistic Opinion Pooling} (hereafter POP) and evaluate its success as a solution to the group credence problem.
+
+\section{Troublesome scenarios for group credences}
+
+To demonstrate the complications inherent in group credence functions, I will examine scenarios where the unweighted linear averaging rule yields poor outcomes. Later in this paper I will use these same scenarios to evaluate how successful POP is as a group credence procedure.
+
+In order to outline unweighted linear averaging I must first define some terminology. Call a \textit{credence function} a function which maps propositions to probabilities (between zero and one). Given a group \(G\) of \(n\) individuals and a list of their credence functions \(CR = \langle cr_1, cr_2, ..., cr_n\rangle\), unweighted linear averaging says that the credence function for the entire group G is 
+
+\[cr_G(P,CR) = \frac{1}{n}\times\sum_{cr \in CR}cr(P)\]
+
+\noindent 
+\citet{russell2015groupthink} outlines a number of properties which are \textit{prima facie} desirable in group credence functions. Unweighted linear averaging has a number of these properties, such as 
+
+\begin{itemize}
+	\item \textbf{Anonymity}: if \(CR'\) is a permutation of \(CR\), \(cr_G(P, CR) = cr_G(P, CR')\) (i.e. the identity of each individual doesn't matter, only their credence).
+	\item \textbf{Systematicity}: the credence of a specific proposition \(P\) is a pure function of each individual's credence in P, and nothing else \textemdash{} neither credences for other propositions, nor outside information beyond credences will affect the output of \(CR\).
+	\item \textbf{Unanimity}: if each individual in the group has the same credence for P, then the group should have that credence too.
+	\item \textbf{Independence preservation}: if all individuals have independent credences for propositions P and Q, then the group credence function for P and Q should also be independent. 
+	\item \textbf{Continuity}: small changes in the input individual credences should lead to small changes in the output group credence, i.e. \(cr_G(-,CR)\) should be a continuous function.
+\end{itemize}
 
 
 \bibliographystyle{apa-good}

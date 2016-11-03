@@ -1,0 +1,48 @@
+Group Rationality essay
+
+Goal: evaluate premise-based procedures as a solution to the Group Credence Problem. 
+
+Essay Plan (4 to 5 thousand words)
+
+Introduction (500)
+ - What is group epistemology?
+ - How does it differ to individual epistemology?
+ - Why isn't it straightforward?
+
+Introduce premise-based procedures (500)
+ - Outline L&P
+ - Outline Probabilistic Opinion Pooling (POP)
+
+Evaluate POP (600 each?)
+ - Violates many L&P impossibility conditions. Is this good or bad?
+ - Elephant problem
+ - How do you choose premises? (Kolgomorov? Pearl causality?)
+ - Evidentialism - does POP ignore evidence problems? Lackey's guards?
+ - Once you have your premise credences, how do you move forward to conclusion credences? Whose probability function do you use? Average them? Universal Prior?
+
+Conclusion (1000)
+ - Summarise the evaluation - overall good or bad?
+ - Ways to improve it? Build in group evidence?
+
+
+
+
+But while it may not always be possible to know what beliefs and credences a group ought to have, this does not mean that such knowledge is never, or even rarely, possible.
+
+Should norms for group belief be like norms for ind belief or like group pref? 
+My arg: structural difference between pref and belief like zero point, boundlessness, objective correctness conditions
+
+
+
+Estlund
+-------
+
+pg. 230: wisdom of the crowds fails because you can't assume Just Above Random Chance accuracy for votes. Think about the elephant and blind men. People shouldn't assign 51% to Elephant and 49% to Not-Elephant. Not-Elephant is a disjunctive and far simpler hypothesis. Putting Elephant on the ballot is privileging the hypothesis. This is why WOC fails - most ballots are disjunctive in some way. X or Not-X is always massively weighted towards Not-X.
+
+
+
+
+
+
+
+
