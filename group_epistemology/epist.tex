@@ -171,6 +171,7 @@ How does POP protect groups from Dutch Books? Consider again the earlier example
 	\item \textbf{M2:} P(A) = 1/3, P(B) = 2/3, P(A xor B) = 5/9
 \end{itemize}
 
+\noindent
 Therefore, if group credences are the average of individual opinions, the group will believe P(A) = P(B) = 1/2 and P(A xor B) = 5/9. This is probabilistically incoherent, because the laws of probability imply that for all and any propositions X and Y, if P(X) = P(Y) = 1/2 then P(X xor Y) should be 1/2, not 5/9.
 
 Under POP, propositions are classified as either premises or conclusions, with the requirement that all premises must be probabilistically independent. Therefore, if A and B are both premises, (A xor B) must be a conclusion. This means (A xor B) is not chosen by averaging individual credences for (A xor B), but rather by applying probability laws to the group credence in the premises.
@@ -194,6 +195,7 @@ Here's one way of formulating the Elephant Test as an agenda. Consider the follo
 \end{tabular}
 \end{center}
 
+\noindent
 Note that Other is equivalent to ``not Snake, Horse, Hippo or Elephant''. One could therefore treat Snake, Horse, Hippo and Elephant as premises and Other as a conclusion. Averaging individual credences for premises and assigning a coherent credence for the conclusion yields these group credences:
 
 \begin{center}
@@ -205,6 +207,7 @@ Note that Other is equivalent to ``not Snake, Horse, Hippo or Elephant''. One co
 \end{tabular}
 \end{center}
 
+\noindent
 It seems POP fails the Elephant Test on this formulation. If the elephant proposition is a premise, then its group credence will simply be the average of individual credences. Just like in unweighted linear averaging, this yields poor results. If no individual personally posses enough evidence to believe the elephant proposition, then the group will distrust the elephant proposition too.
 
 However, more sophisticated formulations of the problem may help. What if the group considered three additional propositions: that the animal has a prehensile appendage, is a quadruped, and has a tail. These are all premises, and the remaining propositions (is snake, is horse, is hippo, is elephant, is other) are all conclusions.
@@ -221,15 +224,38 @@ However, more sophisticated formulations of the problem may help. What if the gr
 \end{tabular}
 \end{center}
 
+\noindent
 Given these premise credences, it's implausible that the group will determine the animal is an elephant. After all, the group doesn't even have significant confidence that the animal has a tail, or is a quadruped. It seems that even this more sophisticated formulation fails the Elephant Test. 
 
 These examples demonstrate the aforementioned dilution of evidence. In the second formulation, the group only has 1/3rd confidence in each piece of evidence, despite each individual being fully confident in their individual evidence. POP fails the Elephant Test because it makes poor use of evidence. In partiular, POP has no concept of \textit{group level evidence}, only individual evidence. This makes it poorly suited to single individuals possess highly significant information, such as the Elephant Test.
 
-\subsection{Telling premises from conclusions}
+\subsection{Distinguishing premises and conclusions}
 
 We have seen that POP improves over unweighted linear averaging in a number of ways. It disrespects unanimity and systematicity in situations where it makes sense to do so; it commutes with conditionalisation. Neither system passes the Elephant Test. So far, POP does at least as well as unweighted linear averaging in all areas, and it appears to be a highly valuable (although imperfect) group credence procedure.
 
-However, I have some additional concerns with POP. My first is that the POP methodology doesn't properly specify how groups should distinguish premises from conclusions. 
+However, I have some additional concerns with POP. My first is that the POP methodology doesn't properly specify how groups should distinguish premises from conclusions. \citet[pg. 2]{dietrich2013probabilistic} claim that ``there are events that correspond to intuitively basic propositions, such as `it will rain', `it will be humid', `atmospheric CO2 causes global warming.{'}'' Premises will be these intuitive propositions. Conclusions will be any events which depend on or combine basic events.
+
+Dietrich and List claim the premise-conclusion distinction is informal, but ``arguably not \textit{ad-hoc}'' [pg. 3]. As touched on in the Elephant Test section, POP will produce very different credences for different problem formulations. This is problematic because an algebra of propositions has no canonical way to identify atomic propositions.\footnote{This is equivalent to the idea that there's no canonical way to identify ``primitive'' terms in language, demonstrated in the Grue paradox \citep{goodman1983fact}. ``Blue'' and ``green'' are primitive terms in English, and ``coloured green before Christmas 2088, then blue afterwards'' and ``coloured blue before Christmas 2088, then blue afterwards'' are complex terms, we can easily imagine a language where this is reversed. A language could use Grue and Bleen to designate the latter two terms. In this language, Grue and Bleen are primitives, and the concept of ``blue'' can only be phrased as ``bleen before Christmas 2088, then grue afterwards''.} 
+
+I do not believe this to be a significant weakness of POP. The difficulty of distinguishing premises and conclusions seems to draw from the more general difficulty of choosing a canonical logical representation of real-world problems, and we have little hope of formalising this process. Lack of formalisation hinders attempts to create autonomous non-human groups \textemdash{} groups of robots working together, or autonomous corporations like the recently-launched Ethereum DAO \textemdash{}. However, any group capable of understanding problems of group epistemology will presumably already have some language and representation they use to discuss group issues, and I suggest any natural basis which allows them to form groups of agents will serve to represent basic propositions.
+
+\subsection{Group probability functions}
+
+Say a group has group credences for premises like ``it will rain tomorrow'' and ``it will be hot tomorrow''. How should they calculate the likelihood of ``it will rain and be hot tomorrow''? \citet[pg. 3]{dietrich2013probabilistic} says this credence should be ``some suitable function of the collective probability of `rain', the collective probability of `heat', and an estimated rain/heat-correlation coefficient.'' What should this ``suitable function'' be? And how should groups choose these correlation coefficients? The authors suggest ``aggregating the rain/heat-correlation coeffients encoded in the individual probability functions.'' Presumably the mapping function could also be an average of individual mapping functions. But the group could just as easily use some other fixed probability function: the Solomonoff Induction universal prior, for instance.
+
+This is a special case of a more general problem: when a theory of choice has free parameters, one must choose values for those parameters without consulting the (parameterized) theory of choice. This problem rears its head in decision theory \citep[pg 10-12]{resnik1987choices}. How are we meant to make group decisions about our group decisionmaking process without circular logic or infinite regress? I suggest empirical research is the solution. Different groups solving different kinds of problems may require different structure, and empirical research is the key to identifying which structure and parameters which yield the best outcomes for a certain kind of group. The infinite regress is cut short by real-world data. This may not be helpful if the group lacks data or is operating in a new problem domain, however, if the group acts rationally they should be able to vary their approach and evaluate changes as they are made.
+
+\section{POP and evidence}
+
+I will briefly return to a concern I raised earlier: that POP does not properly use all evidence available to the group. Recall the Elephant Test. The group has all the evidence necessary to identify the elephant. However, when only a small fraction of the group posses many pieces of evidence, the evidence gets diluted by the averaging processes.
+
+In general, POP will fail to assign high credence to a proposition when the propositions which justify it are only believed by minorities of the group. How can we rectify this?
+
+One solution would be to include deliberation in the group decisionmaking process. If each blind man shared his evidence with the others, the group would assign a justifiably high credence to the animal being an elephant. In fact, one could argue that my formalisation of the Elephant Test is unfair because it excludes the possibility of sharing evidence. Nonetheless, in many real-world scenarios group members will be unable to deliberate or share evidence. Perhaps the lesson is merely that groups will be limited in their accuracy if communication or deliberation is hampered. 
+
+Nonetheless, I feel the Elephant Test points out a deeper flaw with POP beyond its lack of deliberation. POP assumes that all information from evidence has already been fully integrated into each individual premise credence. However, some evidence can rightly be considered \textit{group} evidence: evidence possessed by the group, but not by any individual in the group. The conjunction of trunk-legs-tail evidence yields joint evidence which has explanatory power far beyond the sum of its parts. The problem is that premise pooling is necessarily a linear procedure, but evidence is often nonlinear. The addition of a small piece of evidence can often have large effects, but the local pooling process erases them. 
+
+[TODO: finish this part]
 
 
 \bibliographystyle{apa-good}
