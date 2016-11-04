@@ -46,9 +46,24 @@ The procedure meets \textbf{systematicity} because it calculates the group crede
 
 \textbf{Unanimity} is a natural consequence of using averaging: if all the numbers being averaged are equal, then the average will be that value too. Unanimity has an intuitive appeal \textemdash{} if every member in the group agrees, then there's no dispute to even resolve, and thus no need to consult a group credence function. 
 
-Unfortunately, unweighted linear averaging fails to meet several other important criteria of a good credence aggregation function. Firstly, it fails to \textit{commute with conditionalisation}. As \citet[pg. 1290]{russell2015groupthink} puts it, ``if every individual updates on new information by conditionalizing, the resulting average credence won't be the same as what they would get from first averaging their unconditional credences in each proposition, and then conditionalizing on the new evidence.'' Unweighted linear averaging doesn't respect conditionalisation \citep[pg. 87]{loewer1985destroying}, which has serious consequences.
+\subsection{Failure to respect conditionalisation}
 
-If each individual conditionalises on evidence, and then the group credence is recalculated, the group's final credence function won't be the same as its old credence conditionalised. This means the group can now be tricked into buying a Dutch Book \textemdash{} ``a set of bets bought or sold at such prices as to guarantee a net loss'' \citep{hajek2008dutch}. Generally, an agent is considered irrational if they would ever possibly buy a bet which is guaranteed to lose them more money than they paid for it. Therefore, any group whose credences do not commute with conditionalisation opens themselves up to irrational behaviour \textemdash{} certainly not a desirable property of a credence function.
+Unfortunately, unweighted linear averaging fails to meet several other important criteria of a good credence aggregation function \textemdash{} for example, it does not \textit{commute with conditionalisation}. As \citet[pg. 1290]{russell2015groupthink} puts it, ``if every individual updates on new information by conditionalizing, the resulting average credence won't be the same as what they would get from first averaging their unconditional credences in each proposition, and then conditionalizing on the new evidence.'' Unweighted linear averaging doesn't respect conditionalisation \citep[pg. 87]{loewer1985destroying}.
+
+This is a serious problem because the group can now assign incoherent probabilities. Consider this example based on \citet[pg. 1288]{russell2015groupthink}. A group of two members M1 and M2 disagree over whether anvils or balloons are a good investment. Let A be the proposition that anvils are a good investment and B the proposition that balloons are. The two members assign credences like so:
+
+\begin{itemize}
+	\item M1 assigns P(A) = 2/3 and P(B) = 1/3
+	\item M2 assigns P(A) = 1/3 and P(B) = 2/3
+\end{itemize}
+
+Given these assignments, both members calculate the probability of exactly one of balloons or anvils being a good investment, i.e. P(A xor B), at 5/9. 
+
+If the group they jointly form assigns its group-level credences via unweighted linear averaging, it will assign \(P(A) = \frac{1}{2} \times (\frac{1}{3} + \frac{2}{3}) = \frac{1}{2} = 0.5\). The same reasoning yields 0.5 as group credence in B. Averaging 5/9 and 5/9 yields 5/9, so the group credence in P(A xor B) is also 5/9. However, this is inconsistent with the laws of probability. If P(A) = 0.5 and P(B) = 0.5, then P(A xor B) should also equal 0.5. Therefore, the group has reached probabilistically inconsistent credences by following unweighted linear averaging. 
+
+This means the group can now be tricked into buying a Dutch Book \textemdash{} ``a set of bets bought or sold at such prices as to guarantee a net loss'' \citep{hajek2008dutch}. No agent with rational probability assignments would ever buy a bet which is guaranteed to lose them money. However, if an agent's probabilities are inconsistent (like the M1 + M2 group agent above), it will approve of this irrational, guaranteed-loss purchase. Therefore, any group whose credences do not commute with conditionalisation opens themselves up to irrational behaviour. Unweighted linear averaging is therefore a poor choice of group credence function, because groups which use it will endorse irrational decisions which are guaranteed to lose them money.
+
+\subsection{Failure at the Elephant Test}
 
 Unweighted linear averaging also fails at what I call the \textbf{Elephant Test}. In the ancient fable, three blind men come across an elephant and each touches a different part of it. One man touches its trunk, and concludes the animal is a snake. One man touches the tail and concludes the animal is a horse. One man touches the leg and concludes it is a rhinocerous\footnote{\citet[pg. 229]{estlund2009democratic} uses this fable as an example of voters who do not have accuracy above 50\%. I attribute my recognition of the fable's philosophical significance to him, however he uses the fable for a completely different purpose to me.}. Let \(H_{elephant}\) be the hypothesis that the three men have encountered an elephant. 
 
@@ -145,6 +160,22 @@ The existence of each document should be considered a premise (in the POP sense)
 [TODO: elaborate on this?]
 
 \subsubsection{Conditionalisation}
+
+I previously demonstrated that group credence functions should commute with conditionalisation, otherwise they will not assign their probabilities in coherent ways and open themselves up to irrational purchasing behaviour and exploitation via Dutch Books. POP happens to commute with conditionalisation, which is a marked improvement over many other credence procedures which use pooling.
+
+How does POP protect groups from Dutch Books? Consider again the earlier example from page [TODO: LOOK UP PAGE NUMBER]. The group's individuals assigned these credences:
+
+\begin{itemize}
+	\item \textbf{M1:} P(A) = 2/3, P(B) = 1/3, P(A xor B) = 5/9
+	\item \textbf{M2:} P(A) = 1/3, P(B) = 2/3, P(A xor B) = 5/9
+\end{itemize}
+
+Therefore, if group credences are the average of individual opinions, the group will believe P(A) = P(B) = 1/2 and P(A xor B) = 5/9. This is probabilistically incoherent, because the laws of probability imply that for all and any propositions X and Y, if P(X) = P(Y) = 1/2 then P(X xor Y) should be 1/2, not 5/9.
+
+Under POP, propositions are classified as either premises or conclusions, with the requirement that all premises must be probabilistically independent. Therefore, if A and B are both premises, (A xor B) must be a conclusion. This means (A xor B) is not chosen by averaging individual credences for (A xor B), but rather by applying probability laws to the group credence in the premises.
+
+Group credence for premises A and B are determined by averaging, so the group has credence 1/2 in each. The group can then determine its credence in (A xor B) by applying probability theory and noting that P(A xor B) = P(A and not B) + P(B and not A) = 1/2. Thus, POP yields a probabilistically consistent credence assignment in this example \textemdash{} a marked improvement over unweighted linear averaging. 
+
 \subsubsection{Elephant Test}
 
 \bibliographystyle{apa-good}
