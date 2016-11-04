@@ -37,16 +37,16 @@ In order to outline unweighted linear averaging I must first define some termino
 	\item \textbf{Anonymity}: if \(CR'\) is a permutation of \(CR\), \(cr_G(P, CR) = cr_G(P, CR')\) (i.e. the identity of each individual doesn't matter, only their credence).
 	\item \textbf{Systematicity}: the credence of a specific proposition \(P\) is a pure function of each individual's credence in P, and nothing else \textemdash{} neither credences for other propositions, nor outside information beyond credences will affect the output of \(CR\).
 	\item \textbf{Unanimity}: if each individual in the group has the same credence for P, then the group should have that credence too.
-	\item \textbf{Continuity}: small changes in the input individual credences should lead to small changes in the output group credence, i.e. \(cr_G(-,CR)\) should be a continuous function.
 \end{itemize}
 
+\noindent
 Unweighted linear averaging has \textbf{anonymity} because it treats every individual in the group the exact same way. Anonymity is motivated by considerations of fairness \textemdash{} a group should use information from all its members equally, and not privilege one member above others. There shouldn't be a small minority responsible for the group's decisions, and there certainly shouldn't be a \textit{dictator} individual whose credences determine the entire group's.
 
 The procedure meets \textbf{systematicity} because it calculates the group credence for a proposition using only the individual credences for that proposition (averaging them). Systematicity is desirable because otherwise group members could manipulate the group's decision by introducing other propositions or outside information (sometimes called `irrelevant alternatives')
 
-\textbf{Unanimity} is a natural consequence of using averaging: if all the numbers being averaged are equal, then the average will be that value too. Unanimity has an intuitive appeal \textemdash{} if every member in the group agrees, then there's no dispute to even resolve, and thus no need to consult a group credence function. Unweighted linear averaging's \textbf{continuity} comes from the linearity of averaging generally: if you slightly change one of the numbers being averaged, you'll only change the average a slight amount. This has some intuitive appeal but is less motivated than other properties.
+\textbf{Unanimity} is a natural consequence of using averaging: if all the numbers being averaged are equal, then the average will be that value too. Unanimity has an intuitive appeal \textemdash{} if every member in the group agrees, then there's no dispute to even resolve, and thus no need to consult a group credence function. 
 
-Unfortunately, unweighted linear averaging fails to meet several other important criteria of a good credence aggregation function. Firstly, it fails to \textit{commute with conditionalisation}. As \citet[pg. 1290]{russell2015groupthink} puts it, ``if every individual updates on new information by conditionalizing, the resulting average credence won’t be the same as what they would get from first averaging their unconditional credences in each proposition, and then conditionalizing on the new evidence.'' Unweighted linear averaging doesn't respect conditionalisation \citep[pg. 87]{loewer1985destroying}, which has serious consequences.
+Unfortunately, unweighted linear averaging fails to meet several other important criteria of a good credence aggregation function. Firstly, it fails to \textit{commute with conditionalisation}. As \citet[pg. 1290]{russell2015groupthink} puts it, ``if every individual updates on new information by conditionalizing, the resulting average credence won't be the same as what they would get from first averaging their unconditional credences in each proposition, and then conditionalizing on the new evidence.'' Unweighted linear averaging doesn't respect conditionalisation \citep[pg. 87]{loewer1985destroying}, which has serious consequences.
 
 If each individual conditionalises on evidence, and then the group credence is recalculated, the group's final credence function won't be the same as its old credence conditionalised. This means the group can now be tricked into buying a Dutch Book \textemdash{} ``a set of bets bought or sold at such prices as to guarantee a net loss'' \citep{hajek2008dutch}. Generally, an agent is considered irrational if they would ever possibly buy a bet which is guaranteed to lose them more money than they paid for it. Therefore, any group whose credences do not commute with conditionalisation opens themselves up to irrational behaviour \textemdash{} certainly not a desirable property of a credence function.
 
@@ -64,12 +64,88 @@ Mistakes based on probabilistic outcomes are also not evidence of irrationality:
 
 However, failing to identify the elephant is unlike these failures. Unweighted linear averaging groups fail to identify the elephant not because they lack information or evidence, not because of probabilistic failure, but simply because they \textit{do not use the information available to them}. They ignore relevant evidence, which is surely a sign of irrationality.
 
-To summarise: although unweighted linear averaging has a number of desirable properties (anonymity, systemacity, unanimity, continuity) it fails to commute with conditionalisation. Therefore, groups whose credences are chosen with this mechanism will be vulnerable to Dutch Books and can be easily exploited. It also fails the Elephant Test, which indicates it ignores relevant evidence possessed by group members. These are both serious problems and demonstrate the need for a more sophisticated group credence procedure, such as POP.
+To summarise: although unweighted linear averaging has a number of desirable properties (anonymity, systemacity, unanimity) it fails to commute with conditionalisation. Therefore, groups whose credences are chosen with this mechanism will be vulnerable to Dutch Books and can be easily exploited. It also fails the Elephant Test, which indicates it ignores relevant evidence possessed by group members. These are both serious problems and demonstrate the need for a more sophisticated group credence procedure, such as POP.
 
-\section{Probabilistic Opinion Pooling: POP}
+\section{Probabilistic Opinion Pooling}
 
+\subsection{What is POP?}
 
+\citet{dietrich2013probabilistic} proposes POP as a way to assign group credences to propositions in the group's \textit{agenda} \textemdash{} the set of propositions which the group is considering. POP involves dividing the agenda into two sets (premises and conclusions) and uses different credence-calculation rules for each set. 
 
+Consider this example. Say a group is deciding whether or not to buy a beachfront property. Their agenda might include three propositions (and their negations):
+
+\begin{itemize}
+	\item T: There will be a tsunami on this coastline in the near future
+	\item L: Land taxation rates will not be increased in the near future
+	\item B: Beachfront housing is a good short-term investment
+\end{itemize}
+
+\noindent
+Intuitively, the likelihood of T and M should be independent of each other. It is difficult to see a way they could be correlated. However, the likelihood of B depends on both T and L \textemdash{} if either a tsunami or a land tax increase occurred, the investment value of beachfront housing would diminish. It seems rational for a group to determine their confidence in T and L independently, consulting only facts about tsunamis for T and facts about politics and economics for L. Once the group has credences for T and L, they can then use them (perhaps alongside other considerations) to determine their credence in B. 
+
+In short, some propositions in the group's agenda are independent relative to each other; others are probabilistically dependent on each other. Call these `independent' propositions `premises'. It seems rational to calculate premises independently, then use the group's credences in each premise to calculate conclusion credences.
+
+This is the idea behind POP. Groups should ``first aggregate individual probabilities for basic events [premises] and then let the resulting collective probabilities constrain the collective probabilities of all other events'' \citep[pg. 6]{dietrich2013probabilistic}. 
+
+The group's credence in a premise comes from simply pooling each individual's credence in that premise. This pooling function could be an arithmetic average (just like in unweighted linear averaging does), but other functions are possible too. Importantly, premises are \textit{independent} of each other. A premise P's credence comes \textit{only} from individual credences in P \textemdash{} not from any individual or group credence in any other proposition on the agenda.
+
+Unlike premises (which are required to be independent of each other), the credence of each conclusion will depend on the credences assigned to premises. Once the group has assigned credences to all premises, it can then use them to calculate the credence for each conclusion. The premises \textit{constrain} the group's credences in the conclusions. It would be probabilistically incoherent for the group to believe both that there will \textit{definitely} be a tsunami next year and also that beachfront housing is a good short-term investment. Therefore, the need to maintain probabilistic coherence means \textit{premise credences constrain conclusion credences}.
+
+POP is based on \citet{list2011group}'s Premise-Based Procedure, which can be viewed as a special case of POP which deals with beliefs rather than credences (i.e. binary do/don't beliefs rather than probabilistic degrees of belief). In the Premise-Based Procedure, propositions are divided into premises and conclusions in a way such that premises are logically independent of each other, and conclusions are logically related to premises. Individual beliefs about premises are aggregated to group beliefs about premises.\footnote{Aggregating binary beliefs requires different methods to aggregating credences. Common examples are majority rule (the group believes P if a majority of members believe P), unanimity (the group believes P only if all members believe P), dictatorship (the group believes P if a specific member believes it) and supermajority (the group believes P if a certain percentage of members over 50\% believes it).} The group then uses the logical implications of the premises which it believes to determine which conclusions the group believes. 
+
+\subsection{Evaluating POP}
+
+Does POP succeed as a theory of group credence? I will begin by noting that POP is underspecified in two ways. Firstly, it admits a (limited) range of pooling functions.\footnote{Specifically, ``given certain logical connections between the premises, independence on premises, together with a unanimity-preservation requirement, implies that the collective probability for each premise is a (possibly weighted) linear average of the individual probabilities for that premise'' \citep{dietrich2013probabilistic}.} Secondly, it doesn't specify how the group should generate conclusion credences from premise credences. If probabilistic coherence is to be maintained then the probability of each premise constrains the probability of each conclusion \textemdash{} but which probability function(s) should the group use to generate these conclusion credences?
+
+\subsubsection{Anonymity}
+
+POP's anonymity depends on the anonymity of the pooling function; \citet[pg. 21]{dietrich2013probabilistic} specifically considers dictatorship by one individual as a valid pooling function. This is desirable: it is easy to determine whether a given POP procedure is anonymous, and it also allows the theory to accommodate dictatorship should dictatorship be a good choice for a specific group or agenda. Dictatorship in a group is not always bad: for example, if one group member is an expert on a particular topic, it may be reasonable to allow their opinion to determine the group opinion. Anonymous pooling functions allow for anonymous group credences, so POP does as well as unweighted linear averaging here.
+
+\subsubsection{Systematicity}
+
+To begin, note that if some two propositions aren't probabilistically independent in a group credence function, then that group credence function violates systematicity. This demonstrates that POP breaks systematicity: by design, some propositions (conclusions) are probabilistically dependent on other statements (relevant premises). \citet[pg. 6]{dietrich2013probabilistic} believe systematicity is ``normatively unattractive'': as they write, ``it seems implausible to apply independence [and therefore systematicity] to composite events such as `the economy will grow or atmospheric CO2 causes global warming,' since this would prevent us from using the probabilities of each of the constituent events in determining the overall probability.'' Thsi reasoning demonstrates that while POP breaks systematicity, it's actually a strength of the procedure, not a weakness. Composite propositions shouldn't be independent, and therefore systematicity is actually often an undesirable property of a group credence procedure.
+
+\subsubsection{Unanimity}
+
+\citet{dietrich2013probabilistic} distinguishes two different kinds of partial unanimity:
+
+\begin{itemize}
+	\item \textbf{Consensus preservation:} if every individual assigns credence 1 to a proposition, the group will assign credence 1 to a proposition.\footnote{This is implies the preservation of credence 0 unanimity as well.}
+	\item \textbf{Conditional consensus preservation:} for all premises A and B, if all group members think the credence of A given B is 1, then the group will too.
+\end{itemize}
+
+\noindent
+In POP, both these properties hold for premises, but not conclusions. Why does POP make such weak guarantees about unanimity? It turns out that stronger forms of unanimity are often undesirable.
+
+The group often benefits from keeping unanimity on premises but breaking unanimity for conclusions. Consider this example scenario from \citep{pettigrew2016accuracy}: 
+
+\begin{quote}
+Suppose two historians, Jonathan and Josie, are researching the same question, but in two different archives. Both know that there may be a pair of documents, one in each archive, whose joint existence would establish a controversial theory beyond doubt. Jonathan finds the relevant document in his archive, but doesn't know whether Josie has found hers; and Josie finds the relevant document in her archive, but doesn't know whether Jonathan has found his. Indeed, each assigns a very low credence to the other finding their document; as a result, both have a very low credence in the controversial theory.
+\end{quote}
+
+\noindent
+We can summarise each historian's credences as follows:
+
+\begin{center}
+\begin{tabular}{ | l | l | l |}
+  %\hline
+  %\multicolumn{3}{|c|}{Pascal's Wager} \\
+  \hline
+    & Jonathan & Josie \\ \hline
+  Document A exists & 1 & 0.1 \\ \hline
+  Document B exists & 0.1  & 1 \\ \hline
+  Controversial theory & 0.05  & 0.05 \\
+  \hline
+\end{tabular}
+\end{center}
+
+\noindent
+The existence of each document should be considered a premise (in the POP sense); the controversial theory should be a conclusion. In this example, both individuals unanimously assign credence 0.05 to the theory, but the group jointly possesses enough evidence to confirm the theory with certainty. This demonstrates why unanimity-preservation for conclusions is undesirable: as \citet{dietrich2013probabilistic} says, ``a consensus on a non-basic event could be `spurious' in the sense that there might not be any agreement on its basis.'' If each individual justifies their credence for a conclusion based on differing evidence, the joint sum of their evidence may justify a different conclusion credence. In this way, unanimity for conclusions is actually often an undesirable property of a group credence procedure.
+
+[TODO: elaborate on this?]
+
+\subsubsection{Conditionalisation}
+\subsubsection{Elephant Test}
 
 \bibliographystyle{apa-good}
 \bibliography{epist}
