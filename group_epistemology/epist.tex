@@ -2,6 +2,7 @@
 \usepackage{natbib}
 \usepackage{amsmath}
 \usepackage{setspace}
+\usepackage{pbox}
 \title{Group Epistemology Essay}
 \author{Adam Chalmers}
 \date{\today}
@@ -177,6 +178,59 @@ Under POP, propositions are classified as either premises or conclusions, with t
 Group credence for premises A and B are determined by averaging, so the group has credence 1/2 in each. The group can then determine its credence in (A xor B) by applying probability theory and noting that P(A xor B) = P(A and not B) + P(B and not A) = 1/2. Thus, POP yields a probabilistically consistent credence assignment in this example \textemdash{} a marked improvement over unweighted linear averaging. 
 
 \subsubsection{Elephant Test}
+
+POP has difficulty passing the Elephant Test. Part of the difficulty is that the Elephant Test can be formulated into an agenda of propositions in many different ways. The quality of POP's answer will vary depending on which precise formulation is being used. POP also tends to dilute evidence: if one group member has significant evidence that could greatly alter the group's opinion, increasing group size will drown this evidence out.
+
+Here's one way of formulating the Elephant Test as an agenda. Consider the following credence assignments of the three people in this group, M1, M2 and M3. 
+
+\begin{center}
+\begin{tabular}{ | l | l | l | l | l | l |}
+  %\hline
+  \hline 
+     & Snake & Horse & Hippo & Elephant & Other \\ \hline
+  M1 & 0.6 & 0.01 & 0.01 & 0.02 & 0.36 \\ \hline
+  M2 & 0.01 & 0.6 & 0.01 & 0.02 & 0.36 \\ \hline
+  M3 & 0.01 & 0.01 & 0.6 & 0.02 & 0.36 \\ \hline
+\end{tabular}
+\end{center}
+
+Note that Other is equivalent to ``not Snake, Horse, Hippo or Elephant''. One could therefore treat Snake, Horse, Hippo and Elephant as premises and Other as a conclusion. Averaging individual credences for premises and assigning a coherent credence for the conclusion yields these group credences:
+
+\begin{center}
+\begin{tabular}{ | l | l | l | l | l | l |}
+  %\hline
+  \hline 
+     & Snake & Horse & Hippo & Elephant & Other \\ \hline
+  Group & 0.21 & 0.21 & 0.21 & 0.02 & 0.35 \\ \hline
+\end{tabular}
+\end{center}
+
+It seems POP fails the Elephant Test on this formulation. If the elephant proposition is a premise, then its group credence will simply be the average of individual credences. Just like in unweighted linear averaging, this yields poor results. If no individual personally posses enough evidence to believe the elephant proposition, then the group will distrust the elephant proposition too.
+
+However, more sophisticated formulations of the problem may help. What if the group considered three additional propositions: that the animal has a prehensile appendage, is a quadruped, and has a tail. These are all premises, and the remaining propositions (is snake, is horse, is hippo, is elephant, is other) are all conclusions.
+
+\begin{center}
+\begin{tabular}{ | l | l | l | l | l | }
+  %\hline
+  \hline 
+     & Prehensile appendage & Quadruped & Tail\\ \hline
+  M1 & 0.9 & 0.01 & 0.01 \\ \hline
+  M2 & 0.01 & 0.9 & 0.01 \\ \hline
+  M3 & 0.01 & 0.01 & 0.9 \\ \hline
+  Group average & 0.31 & 0.31 & 0.31 \\ \hline
+\end{tabular}
+\end{center}
+
+Given these premise credences, it's implausible that the group will determine the animal is an elephant. After all, the group doesn't even have significant confidence that the animal has a tail, or is a quadruped. It seems that even this more sophisticated formulation fails the Elephant Test. 
+
+These examples demonstrate the aforementioned dilution of evidence. In the second formulation, the group only has 1/3rd confidence in each piece of evidence, despite each individual being fully confident in their individual evidence. POP fails the Elephant Test because it makes poor use of evidence. In partiular, POP has no concept of \textit{group level evidence}, only individual evidence. This makes it poorly suited to single individuals possess highly significant information, such as the Elephant Test.
+
+\subsection{Telling premises from conclusions}
+
+We have seen that POP improves over unweighted linear averaging in a number of ways. It disrespects unanimity and systematicity in situations where it makes sense to do so; it commutes with conditionalisation. Neither system passes the Elephant Test. So far, POP does at least as well as unweighted linear averaging in all areas, and it appears to be a highly valuable (although imperfect) group credence procedure.
+
+However, I have some additional concerns with POP. My first is that the POP methodology doesn't properly specify how groups should distinguish premises from conclusions. 
+
 
 \bibliographystyle{apa-good}
 \bibliography{epist}
