@@ -1,0 +1,11 @@
+Philosophy of Happiness essay plan
+
+Problem: 
+
+When you or I make a decision involving another person, we frequently attempt to do right by the other party. We often factor the other person's welfare into this decision - will our actions make this person better or worse-off? We may need a theory of welfare in order to make decisions about other people - a theory which explains what a person's best interests are, what makes their life good for them to live.
+
+Scholars have proposed many theories of welfare, but frequently these theories only analyse welfare **for humans**. However, as the dominant species on the planet, humans frequently make decisions which affect non-humans. We often try to act ethically towards animals, or towards the natural environment (for example, when we consider agricultural or forestry policy). This suggests we, as human decision makers, need a theory of welfare which extends to non-humans. How can we make ethical decisions about animals or environments without considering their welfare? 
+
+Furthermore, as science and technology progress, we can expect to encounter previously unknown beings, whether artificial (such as robots or artificial intelligences) or natural (such as aliens or other spacefaring civilisations). Ideally, humans should have a theory of how to consider these creatures interests BEFORE we encounter them. If we leave the question of alien or robotic welfare until we encounter these beings, we may discover too late that we have already caused irreparable harm.
+
+How are we to formulate a general theory of non-human welfare? In this paper I propose one solution to this problem by extending Daniel Haybron's work. Haybron's theory of welfare is eudaimonic and focuses on happiness and psychological flourishing. However, he acknowledges the existence of other welfare goods (such as physical fitness and adherence to one's values) which may also affect a creature's welfare. I propose that these alternate goods provide a good way to evaluate the welfare o creatures (like animals or robots) who may not have affective states or psychological well-being. This general theory of welfare would help us determine the welfare of non-humans and may thus be crucial in acting ethically towards non-human beings.
