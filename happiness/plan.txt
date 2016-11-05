@@ -1,9 +1,21 @@
 Philosophy of Happiness essay plan
 
-When you or I make a decision involving another person, we frequently attempt to do right by the other party. We often factor the other person's welfare into this decision - will our actions make this person better or worse-off? We may need a theory of welfare in order to make decisions about other people - a theory which explains what a person's best interests are, what makes their life good for them to live.
+Intro
+ - What is welfare?
 
-Scholars have proposed many theories of welfare, but frequently these theories only analyse welfare **for humans**. However, as the dominant species on the planet, humans frequently make decisions which affect non-humans. We often try to act ethically towards animals, or towards the natural environment (for example, when we consider agricultural or forestry policy). This suggests we, as human decision makers, need a theory of welfare which extends to non-humans. How can we make ethical decisions about animals or environments without considering their welfare? 
+Haybron welfare
+ - Standard Haybron welfare theory
+ - Other fulfilment types and welfare goods
 
-Furthermore, as science and technology progress, we can expect to encounter previously unknown beings, whether artificial (such as robots or artificial intelligences) or natural (such as aliens or other spacefaring civilisations). Ideally, humans should have a theory of how to consider these creatures interests BEFORE we encounter them. If we leave the question of alien or robotic welfare until we encounter these beings, we may discover too late that we have already caused irreparable harm.
+Nonhuman welfare
+ - Analyse each type of creature and which welfare goods it can receive
+ - Animals
+ - Plants
+ - Ecosystems
+ - Aliens
+ - Robots
+ - Groups
 
-How are we to formulate a general theory of non-human welfare? In this paper I propose one solution to this problem by extending Daniel Haybron's work. Haybron's theory of welfare is eudaimonic and puts self-fulfilment as constituting welfare. His work focuses on happiness, which is critical to fulfilling one's emotional nature, i.e. fulfilling a very important part of one's self. However, he acknowledges other components of one's self (such as one's deliberative-rational self and one's physical self) which are also important to welfare. I propose that welfare for beings without affective or emotional states (such as plants or robots) consists of fulfilling these components of the self which they *DO* possess. This general theory of welfare would help us determine the welfare of non-humans and may thus be crucial in acting ethically towards non-human beings.
+Problems
+ - Welfare economics, aggregation, comparison
+ - Partial ordering
