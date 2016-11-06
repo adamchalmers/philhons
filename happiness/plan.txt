@@ -23,10 +23,9 @@ Problems
  - Welfare aggregation and comparison
  - Partial ordering
 
-Economic concern
- - There is an intuition that welfare ought to be comparable between two people. This is justified by the important role that welfare plays in politics and economics. If we can't compare people's welfare, how can we possibly make decisions which affect them?
- - My response to this is two-pronged: deny that welfare ought to be comparable, and show that other theories also have incomparability as a result.
- - Welfare shouldn't be incompatible. Welfare is the primary subject of enquiry, it is not a normative matter in the same way that ethics is. The concept of welfare is not up for grabs. If it turns out to be difficult to compare welfare, this may just be a fact about human experience which we cannot change.
- - Even simple human-specific theories are incomparable. Haybron's, for example, is incomparable - we'll have two different welfare goods (rational and emotional) and a trade-off between them which will likely yield Pareto-incomparable situations. 
- - I don't think this is so bad - see Welfare As Success for an explanation of how we can make do.
- - Remember welfare is just one ethical primitive, just one tool to use for ethics. It won't paralyse our judgement if we can't compare welfares directy.
+Rock welfare
+ - Yes, rocks have welfare, it consists in not being smashed up.
+ - Bite the bullet
+ - Only problem with this is that welfare is no longer action-guiding or ethically concerned.
+ - Ethical theory requires saying which welfares are and aren't valuable.
+ - BEING is the minimal welfare
