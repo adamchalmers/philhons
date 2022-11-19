@@ -1,4 +1,4 @@
-# philhons
+# Adam's philosophy honours thesis
 The philosophy honours thesis written by Adam Chalmers at University of Sydney. This thesis was awarded first class honours and the John Anderson Prize for Best Thesis in Philosophy IV in 2016. You can read it [at thesis.pdf](https://github.com/adamchalmers/philhons/blob/master/thesis.pdf).
 
 Here is my attempt to explain the thesis using only the 1000 most common English language words (also known as an UpGoerFive explanation):
